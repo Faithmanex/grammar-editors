@@ -818,17 +818,18 @@ input[type='checkbox'] {
 	margin-right: auto;
 	margin-bottom: 4.5rem;
 	margin-left: auto;
+	height: 350px;
 	padding: 3.25rem 2rem 2rem 2rem;
 	border: 1px solid #c4d8dc;
 	border-radius: 0.5rem;
 	background: transparent;
-	transition: box-shadow .3s;
+	transition: box-shadow .05s;
 
 }
 
 .cards-1 .card:hover {
-	border: solid 10px;
-	box-shadow: #7e9194 0px 0px 50px 10px;
+	border: solid #00bfd8 2px;
+	box-shadow: #6e969c 0px 0px 20px 0px;
 
 
 }
