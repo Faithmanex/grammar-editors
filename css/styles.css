@@ -1011,7 +1011,7 @@ input[type='checkbox'] {
 
 .cards-2 .card {
 	display: block;
-	max-width: 19.5rem;
+	max-width: 18rem;
 	margin-right: auto;
 	margin-bottom: 6rem;
 	margin-left: auto;
@@ -1952,7 +1952,7 @@ a:hover.back-to-top {
 	/* Pricing */
 	.cards-2 .card {
 		display: inline-block;
-		width: 17.125rem;
+		width: 30rem;
 		max-width: 100%;
 		margin-right: 1rem;
 		margin-left: 1rem;
@@ -2116,7 +2116,7 @@ a:hover.back-to-top {
 
 	/* Pricing */
 	.cards-2 .card {
-		width: 19.5rem;
+		width: 30rem;
 		margin-right: 1.625rem;
 		margin-left: 1.625rem;
 	}
