@@ -114,8 +114,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>Multiple Pricing Options</h2>
-                    <p class="p-heading p-large">We've prepared pricing plans for all budgets so you can get started right away. They're great for small companies and large organizations</p>
+                    <h2>Simple Pricing</h2>
+                    <p class="p-heading p-large">We have developed a straightforward pricing plan that accommodates all word counts,  so you can get started right away. This pricing scheme is suitable for both small and large documents.</p>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
@@ -130,10 +130,6 @@
                             <div class="card-title">PREMIUM</div>
                             <div class="card-subtitle">Complete editing and formatting (APA 6th and 7th Ed., MLA, Harvard, Chicago, Turabian)</div>
                             <hr class="cell-divide-hr">
-                            <div class="price">
-                                <span class="currency">$</span><span class="value">399</span>
-                                <div class="frequency">monthly</div>
-                            </div>
                             <hr class="cell-divide-hr">
                             <ul class="list-unstyled li-space-lg">
                                 <li class="media">
@@ -158,9 +154,15 @@
                                     <i class="fas fa-check"></i><div class="media-body">Feedback and suggestions</div>
                                 </li>
                             </ul>
-                            <div class="button-wrapper">
-                                <a class="btn-solid-reg page-scroll" href="#request">REQUEST</a>
+                            <div class="value" id="price"></div>
+
+                            <h6>Input word count to calculate price</h6>
+                            <input class="price-input" style="width: 80%; height: 40px; border-radius: 4px;border: solid #00bfd8 2px;padding-left: 5px;" type="number" id="word-count" name="word-count" placeholder="Enter word count">
+
+                            <div onclick="calculatePrice()" class="button-wrapper">
+                                <a class="btn-solid-reg page-scroll" href="javascript:void(0)">CHECK PRICE</a>
                             </div>
+                            <!-- <button type="button" onclick="calculatePrice()">Calculate Price</button> -->
                         </div>
                     </div> <!-- end of card -->
                     <!-- end of card -->
@@ -171,16 +173,43 @@
     </div> <!-- end of cards-2 -->
     <!-- end of pricing -->
 
+    <script>
+		function calculatePrice() {
+			const wordCount = document.getElementById("word-count").value;
+			
+			
+			const price = Math.ceil(wordCount / 500) * 5;
+			document.getElementById("price").innerHTML = `Price: $${price}`;
+		}
+		function calculatePrice() {
+  const wordCount = parseInt(document.getElementById("word-count").value);
+  
+  // Input validation
+  if (isNaN(wordCount) || wordCount <= 0) {
+    alert("Please enter a valid word count!");
+    return;
+  }
+  
+  const price = Math.ceil(wordCount / 500) * 5;
+  document.getElementById("price").innerHTML = `Price: $${price}`;
 
+
+  // Customized alert message
+//   if (price < 10) {
+//     alert("The price for this document is less than $10. Are you sure you want to proceed?");
+//   }
+}
+
+	</script>
     <!-- Request -->
     <div id="request" class="form-1">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
                     <div class="text-container">
-                        <h2>Fill The Following Form To Request A Meeting</h2>
-                        <p>Evolo is one of the easiest and feature packed marketing automation apps in the market. Discover what it can do for your business organization right away.</p>
-                        <ul class="list-unstyled li-space-lg">
+                        <h2>Fill The Following Form Place a custom order</h2>
+                        <p>"Experience Unmatched Convenience and Quality with Proofaid - Request Your Custom Offer Today!"</p>
+                        <!-- <ul class="list-unstyled li-space-lg">
                             <li class="media">
                                 <i class="fas fa-check"></i>
                                 <div class="media-body"><strong class="blue">Automate your marketing</strong> activities and get results today</div>
@@ -197,7 +226,7 @@
                                 <i class="fas fa-check"></i>
                                 <div class="media-body"><strong class="blue">Save precious time</strong> and invest it where you need it the most</div>
                             </li>
-                        </ul>
+                        </ul> -->
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-6">

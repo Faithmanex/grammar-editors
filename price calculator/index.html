@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Proofreading and Editing Pricing</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+		h1 {
+			text-align: center;
+			margin-top: 50px;
+			color: #333;
+		}
+		.container {
+			width: 80%;
+			margin: auto;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			padding: 50px;
+			background-color: #fff;
+			box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+			border-radius: 10px;
+			margin-top: 50px;
+		}
+		.form-group {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 20px;
+			width: 100%;
+		}
+		label {
+			font-weight: bold;
+			margin-bottom: 5px;
+		}
+		input {
+			padding: 10px;
+			border-radius: 5px;
+			border: none;
+			background-color: #f2f2f2;
+			margin-bottom: 10px;
+			width: 100%;
+		}
+		button {
+			background-color: #333;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		.price {
+			font-size: 24px;
+			font-weight: bold;
+			margin-top: 20px;
+			color: #333;
+		}
+	</style>
+</head>
+<body>
+	<h1>Proofreading and Editing Pricing</h1>
+	<div class="container">
+		<form>
+			<div class="form-group">
+				<label for="word-count">Word Count:</label>
+				<input type="number" id="word-count" name="word-count" placeholder="Enter word count">
+			</div>
+			<button type="button" onclick="calculatePrice()">Calculate Price</button>
+			<div class="price" id="price"></div>
+		</form>
+	</div>
+	<script>
+		function calculatePrice() {
+			const wordCount = document.getElementById("word-count").value;
+			
+			
+			const price = Math.ceil(wordCount / 500) * 5;
+			document.getElementById("price").innerHTML = `Price: $${price}`;
+		}
+		function calculatePrice() {
+  const wordCount = parseInt(document.getElementById("word-count").value);
+  
+  // Input validation
+  if (isNaN(wordCount) || wordCount <= 0) {
+    alert("Please enter a valid word count!");
+    return;
+  }
+  
+  const price = Math.ceil(wordCount / 500) * 5;
+  document.getElementById("price").innerHTML = `Price: $${price}`;
+
+
+  // Customized alert message
+//   if (price < 10) {
+//     alert("The price for this document is less than $10. Are you sure you want to proceed?");
+//   }
+}
+
+	</script>
+</body>
+</html>

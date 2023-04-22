@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Pricing Page - Proofreading and Editing</title>
+    <script>
+      function calculatePrice() {
+        // Get the number of words and turnaround time
+        var numWords = document.getElementById("numWords").value;
+        var turnaroundTime = document.getElementById("turnaroundTime").value;
+        
+        // Calculate the base price based on the number of words
+        var basePrice = Math.ceil(numWords / 500) * 5;
+        
+        // Apply the 10% discount for documents more than 10000 words
+        if (numWords > 10000) {
+          basePrice = basePrice * 0.9;
+        }
+        
+        // Add the additional service prices
+        if (document.getElementById("formatting").checked) {
+          basePrice += 10;
+        }
+        if (document.getElementById("referenceChecking").checked) {
+          basePrice += 20;
+        }
+        
+        // Adjust the turnaround time based on the number of words
+        if (numWords <= 5000) {
+          turnaroundTime = 1;
+        } else if (numWords <= 10000) {
+          turnaroundTime = Math.max(turnaroundTime, 2);
+        } else if (numWords <= 20000) {
+          turnaroundTime = Math.max(turnaroundTime, 3);
+        } else if (numWords <= 50000) {
+          turnaroundTime = Math.max(turnaroundTime, 5);
+        } else {
+          document.getElementById("price").innerHTML = "If your document is more than 50000 words, please contact us for a custom order.";
+          return;
+        }
+        
+        // Calculate the final price based on the base price and turnaround time
+        var finalPrice = basePrice * turnaroundTime;
+        
+        // Display the final price
+        document.getElementById("price").innerHTML = "Price: $" + finalPrice.toFixed(2);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Pricing Page - Proofreading and Editing</h1>
+    <form>
+      <label for="numWords">Number of Words:</label>
+      <input type="number" id="numWords" name="numWords" min="1" required><br><br>
+      
+      <label for="turnaroundTime">Turnaround Time:</label>
+      <select id="turnaroundTime" name="turnaroundTime">
+        <option value="1">1 day</option>
+        <option value="2">2 days</option>
+        <option value="3">3 days</option>
+        <option value="5">5 days</option>
+        <option value="7">7 days</option>
+      </select><br><br>
+      
+      <label>Additional Services:</label><br>
+      <input type="checkbox" id="formatting" name="formatting" value="formatting">
+      <label for="formatting">Formatting ($10)</label><br>
+      <input type="checkbox" id="referenceChecking" name="referenceChecking" value="referenceChecking">
+      <label for="referenceChecking">Reference Checking ($20)</label><br><br>
+      
+      <input type="button" value="Calculate Price" onclick="calculatePrice()"><br><br>
+      
+      <div id="price"></div>
+    </form>
+  </body>
+</html>
