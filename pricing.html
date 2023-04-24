@@ -335,11 +335,20 @@
 <div class="form-group">
 		<label for="email">Email:</label>
 		<input class="form-control-input" type="email" id="email" name="email" required></div><br><br>
-		<label for="message">Message:</label>
-		<textarea id="message" name="message" required></textarea><br><br>
+		<div class="form-group"><label for="message">Message:</label>
+		<textarea class="form-control-input" id="message" name="message" required></textarea></div>
+<br><br>
+<div>
 		<label for="file">File:</label>
-		<input type="file" id="file" name="file"><br><br>
+		<input class="form-control-input" type="file" id="file" name="file">
+</div>
+<br><br>
 		<input type="submit" value="Send">
+   <div class="form-group">
+                                <button type="submit" class="form-control-submit-button">REQUEST</button>
+                            </div>
+                            <div class="form-message">
+                                <div id="rmsgSubmit" class="h3 text-center hidden"></div>
 	</form>
 
 	<script>
