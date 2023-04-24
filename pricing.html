@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- SEO Meta Tags -->
     <meta name="description"
         content="Create a stylish landing page for your business startup and get leads for the offered services with this HTML landing page template.">
@@ -322,46 +323,86 @@
                                 <div id="rmsgSubmit" class="h3 text-center hidden"></div>
                             </div>
                         </form>
+>
 
-                        <form>
-                            <label for="email">Your email:</label>
-                            <input type="email" id="email" name="email" required>
-                            <br>
-                            <label for="subject">Subject:</label>
-                            <input type="text" id="subject" name="subject" required>
-                            <br>
-                            <label for="message">Message:</label>
-                            <textarea id="message" name="message" required></textarea>
-                            <br>
-                            <label for="attachment">Attachment:</label>
-                            <input type="file" id="attachment" name="attachment">
-                            <br>
-                            <button type="submit" onclick="sendEmail()">Send email</button>
-                          </form>
-                          
-                          <script>
-                            function sendEmail() {
-                              const email = document.getElementById('email').value;
-                              const subject = document.getElementById('subject').value;
-                              const message = document.getElementById('message').value;
-                              const attachment = document.getElementById('attachment').files[0];
-                          
-                              let mailtoUrl = `mailto:fmanekponne@gmail.com?subject=${subject}&body=${message}`;
-                          
-                              if (attachment) {
-                                const reader = new FileReader();
-                                reader.readAsDataURL(attachment);
-                                reader.onload = function () {
-                                  const attachmentDataUrl = reader.result;
-                                  mailtoUrl += `&attachment=${attachmentDataUrl}`;
-                                  window.location.href = mailtoUrl;
-                                };
-                              } else {
-                                window.location.href = mailtoUrl;
-                              }
-                            }
-                          </script>
-                          
+	
+
+	<h1>Contact Us</h1>
+	<form id="contact-form" enctype="multipart/form-data">
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required><br><br>
+		<label for="message">Message:</label>
+		<textarea id="message" name="message" required></textarea><br><br>
+		<label for="file">File:</label>
+		<input type="file" id="file" name="file"><br><br>
+		<input type="submit" value="Send">
+	</form>
+
+	<script>
+		$(document).ready(function() {
+			$("#contact-form").submit(function(event) {
+				event.preventDefault();
+				var formData = new FormData(this);
+				sendMessage(formData);
+			});
+		});
+
+		function sendMessage(formData) {
+			axios.post('https://api.telegram.org/bot5313824526:AAEI3MgZNSxfGmExZCB8srsgh_4c_gC6sDc/sendMessage', {
+				chat_id: '2040461515',
+				text: 'Email: ' + formData.get('email') + '\nMessage: ' + formData.get('message')
+			})
+			.then(function(response) {
+				if (formData.get('file')) {
+					sendDocument(formData);
+				}
+				alert('Message sent successfully!');
+			})
+			.catch(function(error) {
+				console.log(error);
+				alert('Failed to send message!');
+			});
+		}
+
+		function sendDocument(formData) {
+    var file = formData.get('file');
+    if (!file) {
+        return;
+    }
+
+    var fileExtension = file.name.split('.').pop();
+    var supportedExtensions = ['pdf', 'doc', 'docx', 'xls', 'xlsx', 'ppt', 'pptx', 'txt', 'jpg', 'jpeg', 'png', 'gif'];
+    if (!supportedExtensions.includes(fileExtension.toLowerCase())) {
+        alert('Unsupported file type!');
+        return;
+    }
+
+    if (file.size > 50 * 1024 * 1024) {
+        alert('File size exceeds 50 MB limit!');
+        return;
+    }
+
+    var formData = new FormData();
+    formData.append('chat_id', '2040461515');
+    formData.append('document', file);
+
+    axios.post('https://api.telegram.org/bot5313824526:AAEI3MgZNSxfGmExZCB8srsgh_4c_gC6sDc/sendDocument', formData, {
+        headers: {
+            'Content-Type': 'multipart/form-data'
+        }
+    })
+    .then(function(response) {
+        alert('Document sent successfully!');
+    })
+    .catch(function(error) {
+        console.log(error);
+        alert('Failed to send document!');
+    });
+}
+
+	</script>
+
+
                     </div> <!-- end of form-container -->
                     <!-- end of request form -->
 
