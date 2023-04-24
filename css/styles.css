@@ -1660,9 +1660,13 @@ a:hover.back-to-top {
 		padding-top: 10.5rem;
 	}
 
-	.header h1 {
+	.header > h1 {
 		font-size: 3rem;
 		line-height: 3.5rem;
+	}
+
+	.header h2 {
+		font-size: 2rem;
 	}
 	/* end of header */
 
