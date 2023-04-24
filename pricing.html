@@ -283,6 +283,9 @@
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
 
+
+
+
                     <!-- Request Form -->
                     <div class="form-container">
                         <form id="requestForm" data-toggle="validator" data-focus="false">
@@ -328,9 +331,10 @@
 	
 
 	<h1>Order Request Form</h1>
-	<form id="contact-form" enctype="multipart/form-data">
+	<form id="contact-form" data-toggle="validator" data-focus="false" enctype="multipart/form-data">
+<div class="form-group">
 		<label for="email">Email:</label>
-		<input type="email" id="email" name="email" required><br><br>
+		<input class="form-control-input" type="email" id="email" name="email" required></div><br><br>
 		<label for="message">Message:</label>
 		<textarea id="message" name="message" required></textarea><br><br>
 		<label for="file">File:</label>
