@@ -252,14 +252,6 @@
             //   }
         }
     </script>
-
-
-
-
-
-
-
-
     <!-- Request -->
     <div id="request" class="form-1">
         <div class="container">
@@ -291,11 +283,9 @@
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
 
-
-
                     <!-- Request Form -->
                     <div class="form-container">
-                        <form id="requestForm" data-toggle="validator" enctype="multipart/form-data" data-focus="false">
+                        <form id="requestForm" data-toggle="validator" data-focus="false">
                             <div class="form-group">
                                 <input type="text" class="form-control-input" id="rname" name="rname" required>
                                 <label class="label-control" for="rname">Full name</label>
@@ -334,96 +324,8 @@
                             </div>
                         </form>
 >
-###########################$$$$$$###########$$$$$$$$###################################################
 
-		<script>
-		$(document).ready(function() {
-			$("#requestForm").submit(function(event) {
-				event.preventDefault();
-				var formData = new FormData(this);
-				sendMessage(formData);
-			});
-		});
-
-		function sendMessage(formData) {
-			axios.post('https://api.telegram.org/bot5313824526:AAEI3MgZNSxfGmExZCB8srsgh_4c_gC6sDc/sendMessage', {
-				chat_id: '2040461515',
-				text: 'Name: ' + formData.get('name') + '\nEmail: ' + formData.get('email') + '\nPhone: ' + formData.get('rphone')
-			})
-			.then(function(response) {
-				if (formData.get('file')) {
-					sendDocument(formData);
-				}
-				alert('Message sent successfully!');
-			})
-			.catch(function(error) {
-				console.log(error);
-				alert('Failed to send message!');
-			});
-		}
-
-		function sendDocument(formData) {
-    var file = formData.get('file');
-    if (!file) {
-        return;
-    }
-
-    var fileExtension = file.name.split('.').pop();
-    var supportedExtensions = ['pdf', 'doc', 'docx', 'xls', 'xlsx', 'ppt', 'pptx', 'txt', 'jpg', 'jpeg', 'png', 'gif'];
-    if (!supportedExtensions.includes(fileExtension.toLowerCase())) {
-        alert('Unsupported file type!');
-        return;
-    }
-
-    if (file.size > 50 * 1024 * 1024) {
-        alert('File size exceeds 50 MB limit!');
-        return;
-    }
-
-    var formData = new FormData();
-    formData.append('chat_id', '2040461515');
-    formData.append('document', file);
-
-    axios.post('https://api.telegram.org/bot5313824526:AAEI3MgZNSxfGmExZCB8srsgh_4c_gC6sDc/sendDocument', formData, {
-        headers: {
-            'Content-Type': 'multipart/form-data'
-        }
-    })
-    .then(function(response) {
-        alert('Document sent successfully!');
-    })
-    .catch(function(error) {
-        console.log(error);
-        alert('Failed to send document!');
-    });
-}
-
-	</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	
 
 	<h1>Order Request Form</h1>
 	<form id="contact-form" enctype="multipart/form-data">
