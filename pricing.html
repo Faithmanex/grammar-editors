@@ -323,21 +323,44 @@
                             </div>
                         </form>
 
-                        <form action="send_email.php" method="post" enctype="multipart/form-data">
-                            <label for="name">Name:</label>
-                            <input type="text" id="name" name="name" required>
-                            
-                            <label for="email">Email:</label>
+                        <form>
+                            <label for="email">Your email:</label>
                             <input type="email" id="email" name="email" required>
-                            
+                            <br>
+                            <label for="subject">Subject:</label>
+                            <input type="text" id="subject" name="subject" required>
+                            <br>
                             <label for="message">Message:</label>
                             <textarea id="message" name="message" required></textarea>
-                            
+                            <br>
                             <label for="attachment">Attachment:</label>
                             <input type="file" id="attachment" name="attachment">
-                            
-                            <button type="submit">Send</button>
+                            <br>
+                            <button type="submit" onclick="sendEmail()">Send email</button>
                           </form>
+                          
+                          <script>
+                            function sendEmail() {
+                              const email = document.getElementById('email').value;
+                              const subject = document.getElementById('subject').value;
+                              const message = document.getElementById('message').value;
+                              const attachment = document.getElementById('attachment').files[0];
+                          
+                              let mailtoUrl = `mailto:youremail@example.com?subject=${subject}&body=${message}`;
+                          
+                              if (attachment) {
+                                const reader = new FileReader();
+                                reader.readAsDataURL(attachment);
+                                reader.onload = function () {
+                                  const attachmentDataUrl = reader.result;
+                                  mailtoUrl += `&attachment=${attachmentDataUrl}`;
+                                  window.location.href = mailtoUrl;
+                                };
+                              } else {
+                                window.location.href = mailtoUrl;
+                              }
+                            }
+                          </script>
                           
                     </div> <!-- end of form-container -->
                     <!-- end of request form -->
