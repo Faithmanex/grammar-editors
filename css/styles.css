@@ -774,6 +774,9 @@ input[type='checkbox'] {
 	line-height: 3.125rem;
 }
 
+.header h2 {
+	font-size: 2rem;
+}
 .header .p-large {
 	margin-bottom: 1.875rem;
 }
@@ -1011,7 +1014,7 @@ input[type='checkbox'] {
 
 .cards-2 .card {
 	display: block;
-	max-width: 18rem;
+	max-width: 20rem;
 	margin-right: auto;
 	margin-bottom: 6rem;
 	margin-left: auto;
