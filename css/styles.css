@@ -1368,11 +1368,15 @@ input[type='checkbox'] {
 	overflow: hidden;
 	margin-bottom: 1.5rem;
 	border-radius: 50%;
+	height: 250px;
+	width: 250px
 }
 
 .basic-4 .image-wrapper img {
 	margin: 0;
 	transition: all 0.3s;
+	
+	width:100%;
 }
 
 .basic-4 .image-wrapper:hover img {
