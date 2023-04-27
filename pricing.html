@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- SEO Meta Tags -->
     <meta name="description"
         content="Create a stylish landing page for your business startup and get leads for the offered services with this HTML landing page template.">
@@ -55,7 +55,7 @@
         <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Evolo</a> -->
 
         <!-- Image Logo -->
-        <a class="navbar-brand logo-image" href="index.html"><img src="images/proofaid-logo.png" alt="alternative"></a>
+        <a class="navbar-brand logo-image" href="index.html"><img src="images/proofaid-logo1.png" alt="alternative"></a>
 
         <!-- Mobile Menu Toggle Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
@@ -176,7 +176,7 @@
                             <div class="value" id="price"></div>
 
                             <h6>Input word count to calculate price</h6>
-                            <div  onmouseover="
+                            <div onmouseover="
                             let elem = document.getElementById('myElement');
                             elem.originalStyle = {
                               top: elem.style.top,
@@ -188,27 +188,24 @@
                             elem.style.opacity='1';
                             elem.style.fontSize='0.75rem';
                             elem.style.fontWeight='700';
-                          " 
-                          onmouseout="
+                          " onmouseout="
                             let elem = document.getElementById('myElement');
                             elem.style.top = elem.originalStyle.top;
                             elem.style.opacity = elem.originalStyle.opacity;
                             elem.style.fontSize = elem.originalStyle.fontSize;
                             elem.style.fontWeight = elem.originalStyle.fontWeight;
-                          " 
-                          class="form-group">
+                          " class="form-group">
 
-                                <input style="width: 80%; margin: auto; height: 40px; border-radius: 4px;border: solid #00bfd8 2px;"
+                                <input
+                                    style="width: 80%; margin: auto; height: 40px; border-radius: 4px;border: solid #00bfd8 2px;"
                                     type="number" id="word-count" name="word-count" onclick="" type="text"
                                     class="form-control-input" id="pname" required>
-                                <label id="myElement" style="margin-left: 7%; user-select: none;" class="label-control" for="pname">Word
+                                <label id="myElement" style="margin-left: 7%; user-select: none;" class="label-control"
+                                    for="pname">Word
                                     Count</label>
                                 <div class="help-block with-errors"></div>
                             </div>
-                            <!-- <input
-                                style="width: 80%; height: 40px; border-radius: 4px;border: solid #00bfd8 2px;padding-left: 5px;"
-                                type="number" id="word-count" name="word-count" onclick="placeholder='Word count'"
-                                placeholder="Enter word count"> -->
+                          
 
                             <div onclick="calculatePrice()" class="button-wrapper">
                                 <a class="btn-solid-reg page-scroll" href="javascript:void(0)">CHECK PRICE</a>
@@ -288,150 +285,265 @@
 
                     <!-- Request Form -->
                     <div class="form-container">
+
                         <form id="requestForm" data-toggle="validator" data-focus="false">
-                            <div class="form-group">
-                                <input type="text" class="form-control-input" id="rname" name="rname" required>
-                                <label class="label-control" for="rname">Full name</label>
+                            <div class="form-group"> <input type="text" class="form-control-input" id="rname"
+                                    name="rname" required> <label class="label-control" for="rname">Full name</label>
                                 <div class="help-block with-errors"></div>
                             </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control-input" id="remail" name="remail" required>
-                                <label class="label-control" for="remail">Email</label>
+                            <div class="form-group"> <input type="email" class="form-control-input" id="remail"
+                                    name="remail" required> <label class="label-control" for="remail">Email</label>
                                 <div class="help-block with-errors"></div>
                             </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control-input" id="rphone" name="rphone" required>
-                                <label class="label-control" for="rphone">Phone</label>
+                            <div class="form-group"> <input type="text" class="form-control-input" id="rphone"
+                                    name="rphone" required> <label class="label-control" for="rphone">Phone</label>
                                 <div class="help-block with-errors"></div>
                             </div>
-                            <div class="form-group">
-                                <select class="form-control-select" id="rselect" required>
+                            <div class="form-group"> <select class="form-control-select" id="rselect" required>
                                     <option class="select-option" value="" disabled selected>Interested in...</option>
-                                    <option class="select-option" value="Personal Loan">Starter</option>
-                                    <option class="select-option" value="Car Loan">Medium</option>
-                                    <option class="select-option" value="House Loan">Complete</option>
+                                    <option class="select-option" value="Starter">Academic Editing</option>
+                                    <option class="select-option" value="Medium">Business Editing</option>
+                                    <option class="select-option" value="Complete">Creative Editing</option>
                                 </select>
                                 <div class="help-block with-errors"></div>
                             </div>
-                            <div class="form-group checkbox">
-                                <input type="checkbox" id="rterms" value="Agreed-to-Terms" name="rterms" required>I
-                                agree with Evolo's stated <a href="privacy-policy.html">Privacy Policy</a> and <a
-                                    href="terms-conditions.html">Terms & Conditions</a>
+                            <div class="form-group"> <textarea class="form-control-textarea" id="rmessage"
+                                    name="rmessage" required></textarea> <label class="label-control"
+                                    for="rmessage">Message</label>
                                 <div class="help-block with-errors"></div>
                             </div>
-                            <div class="form-group">
-                                <button type="submit" class="form-control-submit-button">REQUEST</button>
+                            <div class="form-group"> <label for="rfile">Attach a your Document</label><input type="file" class="form-control-file" id="rfile"
+                                    name="rfile"> 
+                                <div class="help-block with-errors"></div>
                             </div>
+                            <div class="form-group checkbox"> <input type="checkbox" id="rterms" value="Agreed to Terms & Conditions"
+                                    name="rterms" required> <label class="label-control" for="rterms">I agree with
+                                    ProofAid's stated <a href="privacy-policy.html">Privacy Policy</a> and <a
+                                        href="terms-conditions.html">Terms & Conditions</a></label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group"> <button type="submit" onclick="sendFile()"
+                                    class="form-control-submit-button">REQUEST</button> </div>
                             <div class="form-message">
                                 <div id="rmsgSubmit" class="h3 text-center hidden"></div>
                             </div>
                         </form>
->
+                    </div>
+<!-- Send Form -->
+<script>
+    const form = document.getElementById('requestForm');
+    const submitBtn = document.getElementById('rmsgSubmit');
 
-	
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        submitBtn.innerHTML = 'Submitting...';
+        submitBtn.disabled = true;
 
-	<h1>Order Request Form</h1>
-	<form id="contact-form" data-toggle="validator" data-focus="false" enctype="multipart/form-data">
+        const formData = new FormData(form);
+        const xhr = new XMLHttpRequest();
+
+        xhr.open('POST', 'https://api.telegram.org/bot5313824526:AAEI3MgZNSxfGmExZCB8srsgh_4c_gC6sDc/sendMessage');
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                alert('Your order request has been sent successfully!');
+                form.reset();
+                submitBtn.innerHTML = 'Submit';
+                submitBtn.disabled = false;
+            }
+        };
+        xhr.send(`chat_id=2040461515&text=Name: ${formData.get('rname')}%0AEmail: ${formData.get('remail')}\n \nPhone: ${formData.get('rphone')}\n \nInterested In: ${formData.get('rselect')}\n \nMessage: ${formData.get('rmessage')}%0ATerms: ${formData.get('rterms')}`);
+    });
+
+// Send File
+    function sendFile() {
+    const input = document.getElementById('rfile');
+    const file = input.files[0];
+    if (!file) {
+      console.error('No file selected');
+      return;
+    }
+    const formData = new FormData();
+    formData.append('document', file);
+    const botToken = '5313824526:AAEI3MgZNSxfGmExZCB8srsgh_4c_gC6sDc';
+    const chatId = '2040461515';
+    const xhr = new XMLHttpRequest();
+    xhr.open('POST', `https://api.telegram.org/bot${botToken}/sendDocument?chat_id=${chatId}`);
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState === 4) {
+        if (xhr.status === 200) {
+          console.log('File sent successfully');
+        } else {
+          console.error(`Failed to send file: ${xhr.statusText}`);
+        }
+      }
+    };
+    xhr.onerror = function() {
+      console.error('Network error');
+    };
+    xhr.send(formData);
+  }
+</script>
 
 
-    <div class="form-group">
-                                <input type="email" class="form-control-input" id="email" name="email" required>
-                                <label class="label-control" for="remail">Email</label>
-                                <div class="help-block with-errors"></div>
+
+
+
+
+
+
+
+
+
+                    <!-- submit form -->
+                    <script>const TelegramBot = require('node-telegram-bot-api');
+                        const token = 'bot5313824526:AAEI3MgZNSxfGmExZCB8srsgh_4c_gC6sDc';
+                        const chatId = '2040461515';
+                        
+                        const bot = new TelegramBot(token, { polling: false });
+                        
+                        // Handle form submission
+                        const form = document.getElementById('requestForm');
+                        form.addEventListener('submit', (event) => {
+                          event.preventDefault();
+                          
+                          // Get form data
+                          const name = document.getElementById('rname').value;
+                          const email = document.getElementById('remail').value;
+                          const phone = document.getElementById('rphone').value;
+                          const select = document.getElementById('rselect').value;
+                          const message = document.getElementById('rmessage').value;
+                          const file = document.getElementById('rfile').files[0];
+                        
+                          // Send message to Telegram bot
+                          const caption = `New form submission:\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nInterested in: ${select}\nMessage: ${message}`;
+                          bot.sendDocument(chatId, file, { caption }).then(() => {
+                            // Show success message
+                            const messageContainer = document.getElementById('rmsgSubmit');
+                            messageContainer.classList.remove('hidden');
+                            messageContainer.classList.add('text-success');
+                            messageContainer.innerHTML = 'Form submitted successfully!';
+                          }).catch((error) => {
+                            // Show error message
+                            const messageContainer = document.getElementById('rmsgSubmit');
+                            messageContainer.classList.remove('hidden');
+                            messageContainer.classList.add('text-danger');
+                            messageContainer.innerHTML = `Error: ${error.message}`;
+                          });
+                        });
+                        
+
+                    </script>
+
+
+
+                    <h1>Order Request Form</h1>
+                    <form id="contact-form" data-toggle="validator" data-focus="false" enctype="multipart/form-data">
+
+
+                        <div class="form-group">
+                            <input type="email" class="form-control-input" id="email" name="email" required>
+                            <label class="label-control" for="remail">Email</label>
+                            <div class="help-block with-errors"></div>
+                        </div>
+
+
+
+
+                        <div class="form-group">
+                            <input type="text" class="form-control-input" id="message" name="message" required>
+                            <label class="label-control" for="message">Message</label>
+                            <div class="help-block with-errors"></div>
+                            <br><br>
+
+                            <div class="form-group">
+                                <label for="file">Attach Document:</label>
+                                <input style="width: 30%;" type="file" id="file" name="file">
                             </div>
-
-
-
-
-<div class="form-group">
-<input type="text" class="form-control-input" id="message" name="message" required>
-<label class="label-control" for="message">Message</label>
-<div class="help-block with-errors"></div>
-<br><br>
-
-<div class="form-group">
-		<label for="file">Attach Document:</label>
-		<input style="width: 30%;" type="file" id="file" name="file">
-</div>
-<br><br>
-   <div class="form-group">
+                            <br><br>
+                            <div class="form-group">
                                 <button type="submit" class="form-control-submit-button">REQUEST</button>
                             </div>
                             <div class="form-message">
                                 <div id="rmsgSubmit" class="h3 text-center hidden"></div>
-	</form>
+                    </form>
 
-	<script>
-		$(document).ready(function() {
-			$("#contact-form").submit(function(event) {
-				event.preventDefault();
-				var formData = new FormData(this);
-				sendMessage(formData);
-			});
-		});
+                    <script>
+                        $(document).ready(function () {
+                            $("#contact-form").submit(function (event) {
+                                event.preventDefault();
+                                var formData = new FormData(this);
+                                sendMessage(formData);
+                            });
+                        });
 
-		function sendMessage(formData) {
-			axios.post('https://api.telegram.org/bot5313824526:AAEI3MgZNSxfGmExZCB8srsgh_4c_gC6sDc/sendMessage', {
-				chat_id: '2040461515',
-				text: 'Email: ' + formData.get('email') + '\nMessage: ' + formData.get('message')
-			})
-			.then(function(response) {
-				if (formData.get('file')) {
-					sendDocument(formData);
-				}
-				alert('Message sent successfully!');
-			})
-			.catch(function(error) {
-				console.log(error);
-				alert('Failed to send message!');
-			});
-		}
+                        function sendMessage(formData) {
+                            axios.post(
+                                    'https://api.telegram.org/bot5313824526:AAEI3MgZNSxfGmExZCB8srsgh_4c_gC6sDc/sendMessage', {
+                                        chat_id: '2040461515',
+                                        text: 'Email: ' + formData.get('email') + '\nMessage: ' + formData.get(
+                                            'message')
+                                    })
+                                .then(function (response) {
+                                    if (formData.get('file')) {
+                                        sendDocument(formData);
+                                    }
+                                    alert('Message sent successfully!');
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                    alert('Failed to send message!');
+                                });
+                        }
 
-		function sendDocument(formData) {
-    var file = formData.get('file');
-    if (!file) {
-        return;
-    }
+                        function sendDocument(formData) {
+                            var file = formData.get('file');
+                            if (!file) {
+                                return;
+                            }
 
-    var fileExtension = file.name.split('.').pop();
-    var supportedExtensions = ['pdf', 'doc', 'docx', 'xls', 'xlsx', 'ppt', 'pptx', 'txt', 'jpg', 'jpeg', 'png', 'gif'];
-    if (!supportedExtensions.includes(fileExtension.toLowerCase())) {
-        alert('Unsupported file type!');
-        return;
-    }
+                            var fileExtension = file.name.split('.').pop();
+                            var supportedExtensions = ['pdf', 'doc', 'docx', 'xls', 'xlsx', 'ppt', 'pptx', 'txt', 'jpg',
+                                'jpeg', 'png', 'gif'
+                            ];
+                            if (!supportedExtensions.includes(fileExtension.toLowerCase())) {
+                                alert('Unsupported file type!');
+                                return;
+                            }
 
-    if (file.size > 50 * 1024 * 1024) {
-        alert('File size exceeds 50 MB limit!');
-        return;
-    }
+                            if (file.size > 50 * 1024 * 1024) {
+                                alert('File size exceeds 50 MB limit!');
+                                return;
+                            }
 
-    var formData = new FormData();
-    formData.append('chat_id', '2040461515');
-    formData.append('document', file);
+                            var formData = new FormData();
+                            formData.append('chat_id', '2040461515');
+                            formData.append('document', file);
 
-    axios.post('https://api.telegram.org/bot5313824526:AAEI3MgZNSxfGmExZCB8srsgh_4c_gC6sDc/sendDocument', formData, {
-        headers: {
-            'Content-Type': 'multipart/form-data'
-        }
-    })
-    .then(function(response) {
-        alert('Document sent successfully!');
-    })
-    .catch(function(error) {
-        console.log(error);
-        alert('Failed to send document!');
-    });
-}
+                            axios.post(
+                                    'https://api.telegram.org/bot5313824526:AAEI3MgZNSxfGmExZCB8srsgh_4c_gC6sDc/sendDocument',
+                                    formData, {
+                                        headers: {
+                                            'Content-Type': 'multipart/form-data'
+                                        }
+                                    })
+                                .then(function (response) {
+                                    alert('Document sent successfully!');
+                                })
+                                .catch(function (error) {
+                                    console.log(error);
+                                    alert('Failed to send document!');
+                                });
+                        }
+                    </script>
 
-	</script>
 
+                </div> <!-- end of form-container -->
+                <!-- end of request form -->
 
-                    </div> <!-- end of form-container -->
-                    <!-- end of request form -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
     </div> <!-- end of form-1 -->
     <!-- end of request -->
 
