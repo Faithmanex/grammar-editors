@@ -1,9 +1,3 @@
-/* Template: Evolo - StartUp HTML Landing Page Template
-   Author: Inovatik
-   Created: June 2019
-   Description: Master CSS file
-*/
-
 /*****************************************
 Table Of Contents:
 
@@ -779,6 +773,10 @@ input[type='checkbox'] {
 }
 .header .p-large {
 	margin-bottom: 1.875rem;
+}
+
+.header-drawer {
+	visibility: hidden;
 }
 
 
@@ -1659,6 +1657,7 @@ a:hover.back-to-top {
 		margin-right: auto;
 		margin-left: auto;
 	}
+
 	/* end of general styles */
 
 
@@ -1675,6 +1674,8 @@ a:hover.back-to-top {
 	.header h2 {
 		font-size: 2rem;
 	}
+
+	
 	/* end of header */
 
 
@@ -1901,6 +1902,10 @@ a:hover.back-to-top {
 	.header .text-container {
 		margin-top: 3rem;
 		margin-bottom: 0;
+	}
+
+	.header-drawer {
+		visibility: visible;
 	}
 	/* end of header */
 
