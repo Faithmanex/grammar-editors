@@ -2,26 +2,34 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <!-- SEO Meta Tags -->
-    <meta name="description"
-        content="Create a stylish landing page for your business startup and get leads for the offered services with this HTML landing page template.">
-    <meta name="author" content="Inovatik">
+    <title>ProofAid - Professional Proofreading and Editing Services</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Search Engine Optimization Meta Tags -->
+    <meta name="description" content="ProofAid offers professional proofreading and editing services for academic papers, business documents, and more. Get expert help with grammar, punctuation, and style.">
+    <meta name="keywords" content="proofreading, editing, academic proofreading, business proofreading, English editing, proofreading services">
+    <meta name="author" content="ProofAid">
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="ProofAid"> <!-- website name -->
+    <meta property="og:site" content="https://epitonet.netlify.app/"> <!-- website link -->
+    <meta property="og:title" content="ProofAid - Professional Proofreading and Editing Services">
+    <meta property="og:description" content="ProofAid offers professional proofreading and editing services for academic papers, business documents, and more. Get expert help with grammar, punctuation, and style.">
+    <meta property="og:image" content="https://epitonet.netlify.app/images/palogo-blue.jpg">
+    <meta property="og:url" content="https://epitonet.netlify.app/">
+    <meta property="og:type" content="website">
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ProofAid - Professional Proofreading and Editing Services">
+    <meta name="twitter:description" content="ProofAid offers professional proofreading and editing services for academic papers, business documents, and more. Get expert help with grammar, punctuation, and style.">
+    <meta name="twitter:image" content="https://epitonet.netlify.app/images/palogo-blue.jpg">
+    <meta name="twitter:site" content="@proofaid">
+    <meta name="twitter:url" content="https://epitonet.netlify.app/">
+    <!-- Other Meta Tags -->
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <link rel="canonical" href="https://epitonet.netlify.app/">
 
-    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
-    <meta property="og:site_name" content="" /> <!-- website name -->
-    <meta property="og:site" content="" /> <!-- website link -->
-    <meta property="og:title" content="" /> <!-- title shown in the actual shared post -->
-    <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
-    <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
-    <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
-    <meta property="og:type" content="article" />
-
-    <!-- Website Title -->
-    <title>Grammar Editors: Crafting Flawless Writing with Expert Proofreading and Editing</title>
 
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext"
@@ -33,10 +41,14 @@
     <link href="css/styles.css" rel="stylesheet">
 
     <!-- Favicon  -->
-    <link rel="icon" href="images/favicon.png">
+    <link rel="icon" href="images/palogo-blue.png">
 </head>
 
 <body data-spy="scroll" data-target=".fixed-top">
+    <!-- Navbar Background -->
+    <div class="magicpattern">
+	</div>
+    <!-- End of Navbar Background -->
 
     <!-- Preloader -->
     <div class="spinner-wrapper">
@@ -55,7 +67,7 @@
         <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">ProofAid</a> -->
 
         <!-- Image Logo -->
-        <a class="navbar-brand logo-image" href="index.html"><img src="images/proofaid-logo1.png" alt="alternative"></a>
+        <a class="navbar-brand logo-image" href="index.html"><img src="images/palogo-blue.png" alt="alternative"></a>
 
         <!-- Mobile Menu Toggle Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
@@ -205,7 +217,7 @@
                                     Count</label>
                                 <div class="help-block with-errors"></div>
                             </div>
-                          
+
 
                             <div onclick="calculatePrice()" class="button-wrapper">
                                 <a class="btn-solid-reg page-scroll" href="javascript:void(0)">CHECK PRICE</a>
@@ -255,9 +267,9 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="text-container">
-                        <h2>Fill The Following Form Place a custom order</h2>
-                        <p>"Experience Unmatched Convenience and Quality with ProofAid - Request Your Custom Offer
-                            Today!"</p>
+                        <h2>Order Request Form</h2>
+                        <h5>Experience Unmatched Convinience and Quality with ProofAid</h5>
+                        <p>"Fill The Following Form Place a custom order"</p>
                         <!-- <ul class="list-unstyled li-space-lg">
                             <li class="media">
                                 <i class="fas fa-check"></i>
@@ -312,12 +324,13 @@
                                     for="rmessage">Message</label>
                                 <div class="help-block with-errors"></div>
                             </div>
-                            <div class="form-group"> <label for="rfile">Attach a your Document</label><input type="file" class="form-control-file" id="rfile"
-                                    name="rfile"> 
+                            <div class="form-group"> <label for="rfile">Attach a your Document</label><input type="file"
+                                    class="form-control-file" id="rfile" name="rfile">
                                 <div class="help-block with-errors"></div>
                             </div>
-                            <div class="form-group checkbox"> <input type="checkbox" id="rterms" value="Agreed to Terms & Conditions"
-                                    name="rterms" required> <label class="label-control" for="rterms">I agree with
+                            <div class="form-group checkbox"> <input type="checkbox" id="rterms"
+                                    value="Agreed to Terms & Conditions" name="rterms" required> <label
+                                    class="label-control" for="rterms">I agree with
                                     ProofAid's stated <a href="privacy-policy.html">Privacy Policy</a> and <a
                                         href="terms-conditions.html">Terms & Conditions</a></label>
                                 <div class="help-block with-errors"></div>
@@ -329,61 +342,69 @@
                             </div>
                         </form>
                     </div>
-<!-- Send Form -->
-<script>
-    const form = document.getElementById('requestForm');
-    const submitBtn = document.getElementById('rmsgSubmit');
+                    <!-- Send Form -->
+                    <script>
+                        const form = document.getElementById('requestForm');
+const submitBtn = document.getElementById('rmsgSubmit');
 
-    form.addEventListener('submit', (event) => {
-        event.preventDefault();
-        submitBtn.innerHTML = 'Submitting...';
-        submitBtn.disabled = true;
-
-        const formData = new FormData(form);
-        const xhr = new XMLHttpRequest();
-
-        xhr.open('POST', 'https://api.telegram.org/bot5313824526:AAEI3MgZNSxfGmExZCB8srsgh_4c_gC6sDc/sendMessage');
-        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-        xhr.onreadystatechange = function() {
-            if (xhr.readyState === 4 && xhr.status === 200) {
-                alert('Your order request has been sent successfully!');
-                form.reset();
-                submitBtn.innerHTML = 'Submit';
-                submitBtn.disabled = false;
-            }
-        };
-        xhr.send(`chat_id=2040461515&text=Name: ${formData.get('rname')}%0AEmail: ${formData.get('remail')}\n \nPhone: ${formData.get('rphone')}\n \nInterested In: ${formData.get('rselect')}\n \nMessage: ${formData.get('rmessage')}%0ATerms: ${formData.get('rterms')}`);
-    });
-
-// Send File
-    function sendFile() {
-    const input = document.getElementById('rfile');
-    const file = input.files[0];
-    if (!file) {
-      console.error('No file selected');
-      return;
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    if (!form.checkValidity()) {
+        alert('Please complete the required inputs');
+        return;
     }
-    const formData = new FormData();
-    formData.append('document', file);
-    const botToken = '5313824526:AAEI3MgZNSxfGmExZCB8srsgh_4c_gC6sDc';
-    const chatId = '2040461515';
+    submitBtn.innerHTML = 'Submitting...';
+    submitBtn.disabled = true;
+
+    const formData = new FormData(form);
     const xhr = new XMLHttpRequest();
-    xhr.open('POST', `https://api.telegram.org/bot${botToken}/sendDocument?chat_id=${chatId}`);
-    xhr.onreadystatechange = function() {
-      if (xhr.readyState === 4) {
-        if (xhr.status === 200) {
-          console.log('File sent successfully');
-        } else {
-          console.error(`Failed to send file: ${xhr.statusText}`);
+
+    xhr.open('POST',
+        'https://api.telegram.org/bot5313824526:AAEI3MgZNSxfGmExZCB8srsgh_4c_gC6sDc/sendMessage'
+        );
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            alert('Your order request has been sent successfully!\nYou will receive an email from us concerning your request');
+            form.reset();
+            submitBtn.innerHTML = 'Submit';
+            submitBtn.disabled = false;
         }
-      }
     };
-    xhr.onerror = function() {
-      console.error('Network error');
-    };
-    xhr.send(formData);
-  }
-</script>
+    xhr.send(
+        `chat_id=2040461515&text=𝐎𝐫𝐝𝐞𝐫 𝐑𝐞𝐪𝐮𝐞𝐬𝐭 - 𝐏𝐫𝐨𝐨𝐟𝐀𝐢𝐝\n\nName: ${formData.get('rname')}%0AEmail: ${formData.get('remail')}\n \nPhone: ${formData.get('rphone')}\n \nInterested In: ${formData.get('rselect')}\n \nMessage: ${formData.get('rmessage')}%0ATerms: ${formData.get('rterms')}`
+        );
+});
+
+                        // Send File
+                        function sendFile() {
+                            const input = document.getElementById('rfile');
+                            const file = input.files[0];
+                            if (!file) {
+                                console.error('No file selected');
+                                return;
+                            }
+                            const formData = new FormData();
+                            formData.append('document', file);
+                            const botToken = '5313824526:AAEI3MgZNSxfGmExZCB8srsgh_4c_gC6sDc';
+                            const chatId = '2040461515';
+                            const xhr = new XMLHttpRequest();
+                            xhr.open('POST', `https://api.telegram.org/bot${botToken}/sendDocument?chat_id=${chatId}`);
+                            xhr.onreadystatechange = function () {
+                                if (xhr.readyState === 4) {
+                                    if (xhr.status === 200) {
+                                        console.log('File sent successfully');
+                                    } else {
+                                        console.error(`Failed to send file: ${xhr.statusText}`);
+                                    }
+                                }
+                            };
+                            xhr.onerror = function () {
+                                console.error('Network error');
+                            };
+                            xhr.send(formData);
+                        }
+                    </script>
 
 
 
@@ -396,147 +417,52 @@
 
 
                     <!-- submit form -->
-                    <script>const TelegramBot = require('node-telegram-bot-api');
+                    <script>
+                        const TelegramBot = require('node-telegram-bot-api');
                         const token = 'bot5313824526:AAEI3MgZNSxfGmExZCB8srsgh_4c_gC6sDc';
                         const chatId = '2040461515';
-                        
-                        const bot = new TelegramBot(token, { polling: false });
-                        
+
+                        const bot = new TelegramBot(token, {
+                            polling: false
+                        });
+
                         // Handle form submission
                         const form = document.getElementById('requestForm');
                         form.addEventListener('submit', (event) => {
-                          event.preventDefault();
-                          
-                          // Get form data
-                          const name = document.getElementById('rname').value;
-                          const email = document.getElementById('remail').value;
-                          const phone = document.getElementById('rphone').value;
-                          const select = document.getElementById('rselect').value;
-                          const message = document.getElementById('rmessage').value;
-                          const file = document.getElementById('rfile').files[0];
-                        
-                          // Send message to Telegram bot
-                          const caption = `New form submission:\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nInterested in: ${select}\nMessage: ${message}`;
-                          bot.sendDocument(chatId, file, { caption }).then(() => {
-                            // Show success message
-                            const messageContainer = document.getElementById('rmsgSubmit');
-                            messageContainer.classList.remove('hidden');
-                            messageContainer.classList.add('text-success');
-                            messageContainer.innerHTML = 'Form submitted successfully!';
-                          }).catch((error) => {
-                            // Show error message
-                            const messageContainer = document.getElementById('rmsgSubmit');
-                            messageContainer.classList.remove('hidden');
-                            messageContainer.classList.add('text-danger');
-                            messageContainer.innerHTML = `Error: ${error.message}`;
-                          });
-                        });
-                        
+                            event.preventDefault();
 
-                    </script>
+                            // Get form data
+                            const name = document.getElementById('rname').value;
+                            const email = document.getElementById('remail').value;
+                            const phone = document.getElementById('rphone').value;
+                            const select = document.getElementById('rselect').value;
+                            const message = document.getElementById('rmessage').value;
+                            const file = document.getElementById('rfile').files[0];
 
-
-
-                    <h1>Order Request Form</h1>
-                    <form id="contact-form" data-toggle="validator" data-focus="false" enctype="multipart/form-data">
-
-
-                        <div class="form-group">
-                            <input type="email" class="form-control-input" id="email" name="email" required>
-                            <label class="label-control" for="remail">Email</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-
-
-
-
-                        <div class="form-group">
-                            <input type="text" class="form-control-input" id="message" name="message" required>
-                            <label class="label-control" for="message">Message</label>
-                            <div class="help-block with-errors"></div>
-                            <br><br>
-
-                            <div class="form-group">
-                                <label for="file">Attach Document:</label>
-                                <input style="width: 30%;" type="file" id="file" name="file">
-                            </div>
-                            <br><br>
-                            <div class="form-group">
-                                <button type="submit" class="form-control-submit-button">REQUEST</button>
-                            </div>
-                            <div class="form-message">
-                                <div id="rmsgSubmit" class="h3 text-center hidden"></div>
-                    </form>
-
-                    <script>
-                        $(document).ready(function () {
-                            $("#contact-form").submit(function (event) {
-                                event.preventDefault();
-                                var formData = new FormData(this);
-                                sendMessage(formData);
+                            // Send message to Telegram bot
+                            const caption =
+                                `New form submission:\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nInterested in: ${select}\nMessage: ${message}`;
+                            bot.sendDocument(chatId, file, {
+                                caption
+                            }).then(() => {
+                                // Show success message
+                                const messageContainer = document.getElementById('rmsgSubmit');
+                                messageContainer.classList.remove('hidden');
+                                messageContainer.classList.add('text-success');
+                                messageContainer.innerHTML = 'Form submitted successfully!';
+                            }).catch((error) => {
+                                // Show error message
+                                const messageContainer = document.getElementById('rmsgSubmit');
+                                messageContainer.classList.remove('hidden');
+                                messageContainer.classList.add('text-danger');
+                                messageContainer.innerHTML = `Error: ${error.message}`;
                             });
                         });
-
-                        function sendMessage(formData) {
-                            axios.post(
-                                    'https://api.telegram.org/bot5313824526:AAEI3MgZNSxfGmExZCB8srsgh_4c_gC6sDc/sendMessage', {
-                                        chat_id: '2040461515',
-                                        text: 'Email: ' + formData.get('email') + '\nMessage: ' + formData.get(
-                                            'message')
-                                    })
-                                .then(function (response) {
-                                    if (formData.get('file')) {
-                                        sendDocument(formData);
-                                    }
-                                    alert('Message sent successfully!');
-                                })
-                                .catch(function (error) {
-                                    console.log(error);
-                                    alert('Failed to send message!');
-                                });
-                        }
-
-                        function sendDocument(formData) {
-                            var file = formData.get('file');
-                            if (!file) {
-                                return;
-                            }
-
-                            var fileExtension = file.name.split('.').pop();
-                            var supportedExtensions = ['pdf', 'doc', 'docx', 'xls', 'xlsx', 'ppt', 'pptx', 'txt', 'jpg',
-                                'jpeg', 'png', 'gif'
-                            ];
-                            if (!supportedExtensions.includes(fileExtension.toLowerCase())) {
-                                alert('Unsupported file type!');
-                                return;
-                            }
-
-                            if (file.size > 50 * 1024 * 1024) {
-                                alert('File size exceeds 50 MB limit!');
-                                return;
-                            }
-
-                            var formData = new FormData();
-                            formData.append('chat_id', '2040461515');
-                            formData.append('document', file);
-
-                            axios.post(
-                                    'https://api.telegram.org/bot5313824526:AAEI3MgZNSxfGmExZCB8srsgh_4c_gC6sDc/sendDocument',
-                                    formData, {
-                                        headers: {
-                                            'Content-Type': 'multipart/form-data'
-                                        }
-                                    })
-                                .then(function (response) {
-                                    alert('Document sent successfully!');
-                                })
-                                .catch(function (error) {
-                                    console.log(error);
-                                    alert('Failed to send document!');
-                                });
-                        }
                     </script>
 
+
+
+                    
 
                 </div> <!-- end of form-container -->
                 <!-- end of request form -->
