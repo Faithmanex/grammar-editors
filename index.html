@@ -585,7 +585,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="text-container">
-                        <h2>Fill The Following Form To Contact Us</h2>
+                        <h2>Fill The Following Form to Send a Request</h2>
                         <p>We value your feedback and inquiries. Please fill out the form below, and we'll get back to
                             you as soon as possible.</p>
                     </div> <!-- end of text-container -->
@@ -678,7 +678,7 @@ form.addEventListener('submit', async (event) => {
         });
 
         if (response.ok) {
-            alert('Your order request has been sent successfully!\nYou will receive an email from us concerning your request');
+            alert('Your request has been sent successfully!\nYou will receive an email from us concerning your request');
             form.reset();
         } else {
             throw new Error('Failed to send the request.');

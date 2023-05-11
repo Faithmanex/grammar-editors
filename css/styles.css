@@ -1272,11 +1272,12 @@ screen and (-ms-high-contrast: none) {
 .form-1 {
 	padding-top: 6.875rem;
 	padding-bottom: 6.25rem;
-	background-color: #f9fafc;
+	background-color: #000000;
 }
 
 .form-1 h2 {
 	margin-bottom: 1.25rem;
+	color: white;
 }
 
 .form-1 .list-unstyled {
@@ -1294,6 +1295,10 @@ screen and (-ms-high-contrast: none) {
 
 .form-1 .text-container {
 	margin-bottom: 3.5rem;
+
+}
+.form-1 p {
+	color: white;
 }
 
 
