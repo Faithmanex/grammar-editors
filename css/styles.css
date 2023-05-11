@@ -1280,10 +1280,18 @@ screen and (-ms-high-contrast: none) {
 	color: white;
 }
 
+.form-1 h5,
+.form-1 h4,
+.form-1 h3 {
+	margin-bottom: 1.25rem;
+	color: white;
+}
+
 .form-1 .form-group checkbox label,
 .form-1 .form-group checkbox label a {
 	color: white;
 }
+
 .form-1 .list-unstyled {
 	margin-top: 1.375rem;
 }

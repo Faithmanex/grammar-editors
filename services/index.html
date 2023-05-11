@@ -175,200 +175,120 @@
 	</div> <!-- end of cards-1 -->
 	<!-- end of services -->
 
-	<!-- Request -->
-	<div id="request" class="form-1">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="text-container">
-						<h2>Fill The Following Form To Request A Meeting</h2>
-						<p>ProofAid is one of the easiest and feature packed marketing automation apps in the market.
-							Discover what it can do for your business organization right away.</p>
-						<ul class="list-unstyled li-space-lg">
-							<li class="media">
-								<i class="fas fa-check"></i>
-								<div class="media-body"><strong class="blue">Automate your marketing</strong> activities
-									and get results today</div>
-							</li>
-							<li class="media">
-								<i class="fas fa-check"></i>
-								<div class="media-body"><strong class="blue">Interact with all your</strong> targeted
-									customers at a personal level</div>
-							</li>
-							<li class="media">
-								<i class="fas fa-check"></i>
-								<div class="media-body"><strong class="blue">Convince them to buy</strong> your
-									company's awesome products</div>
-							</li>
-							<li class="media">
-								<i class="fas fa-check"></i>
-								<div class="media-body"><strong class="blue">Save precious time</strong> and invest it
-									where you need it the most</div>
-							</li>
-						</ul>
-					</div> <!-- end of text-container -->
-				</div> <!-- end of col -->
-				<div class="col-lg-6">
+	 <!-- Request -->
+	 <div id="request" class="form-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h2>Fill The Following Form to Send a Request</h2>
+                        <p>We value your feedback and inquiries. Please fill out the form below, and we'll get back to
+                            you as soon as possible.</p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
 
-					<!-- Request Form -->
-					<div class="form-container">
-						<form id="requestForm" data-toggle="validator" data-focus="false">
-							<div class="form-group">
-								<input type="text" class="form-control-input" id="rname" name="rname" required>
-								<label class="label-control" for="rname">Full name</label>
-								<div class="help-block with-errors"></div>
-							</div>
-							<div class="form-group">
-								<input type="email" class="form-control-input" id="remail" name="remail" required>
-								<label class="label-control" for="remail">Email</label>
-								<div class="help-block with-errors"></div>
-							</div>
-							<div class="form-group">
-								<input type="text" class="form-control-input" id="rphone" name="rphone" required>
-								<label class="label-control" for="rphone">Phone</label>
-								<div class="help-block with-errors"></div>
-							</div>
-							<div class="form-group">
-								<select class="form-control-select" id="rselect" required>
-									<option class="select-option" value="" disabled selected>Interested in...</option>
-									<option class="select-option" value="Personal Loan">Starter</option>
-									<option class="select-option" value="Car Loan">Medium</option>
-									<option class="select-option" value="House Loan">Complete</option>
-								</select>
-								<div class="help-block with-errors"></div>
-							</div>
-							<div class="form-group checkbox">
-								<input type="checkbox" id="rterms" value="Agreed-to-Terms" name="rterms" required>I
-								agree with ProofAid's stated <a href="privacy-policy.html">Privacy Policy</a> and <a
-									href="terms-conditions.html">Terms & Conditions</a>
-								<div class="help-block with-errors"></div>
-							</div>
-							<div class="form-group">
-								<button type="submit" class="form-control-submit-button">REQUEST</button>
-							</div>
-							<div class="form-message">
-								<div id="rmsgSubmit" class="h3 text-center hidden"></div>
-							</div>
-						</form>
-					</div> <!-- end of form-container -->
-					<!-- end of request form -->
+                    <!-- Request Form -->
+                    <div class="form-container">
+                        <form id="requestForm" data-toggle="validator" data-focus="false">
+                            <div class="form-group">
+                                <input type="text" class="form-control-input" id="rname" name="rname" required>
+                                <label class="label-control" for="rname">Full name</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control-input" id="remail" name="remail" required>
+                                <label class="label-control" for="remail">Email</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control-input" id="rphone" name="rphone" required>
+                                <label class="label-control" for="rphone">Phone</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <select class="form-control-select" id="rselect" required>
+                                    <option class="select-option" value="" disabled selected>Interested in...</option>
+                                    <option class="select-option" value=">Academic Editing">Academic Editing</option>
+                                    <option class="select-option" value="Business Editing">Business Editing</option>
+                                    <option class="select-option" value="Creative Editing">Creative Editing</option>
+                                </select>
+                                <!-- <label class="label-control" for="rselect">Interested In</label> -->
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control-textarea" id="rmessage" name="rmessage"
+                                    required></textarea>
+                                <label class="label-control" for="rmessage">Message</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group checkbox">
+                                <input type="checkbox" id="rterms" value="Agreed to Terms" name="rterms" required>
+                                <label for="rterms">I agree with ProofAid's stated <a href="privacy-policy.html">Privacy
+                                        Policy</a> and <a href="terms-conditions.html">Terms & Conditions</a></label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="form-control-submit-button">REQUEST</button>
+                            </div>
+                            <div class="form-message">
+                                <div id="rmsgSubmit" class="h3 text-center hidden"></div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- end of form-container -->
+                    <!-- end of request form -->
 
-				</div> <!-- end of col -->
-			</div> <!-- end of row -->
-		</div> <!-- end of container -->
-	</div> <!-- end of form-1 -->
-	<!-- end of request -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of form-1 -->
+    <!-- end of request -->
 
+    <!-- Request form Script -->
+    <script>
+      const form = document.getElementById('requestForm');
+const submitBtn = document.getElementById('rmsgSubmit');
 
-	<!-- Video -->
-	<div class="basic-3">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<h2>Check Out The Video</h2>
-				</div> <!-- end of col -->
-			</div> <!-- end of row -->
-			<div class="row">
-				<div class="col-lg-12">
+form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    if (!form.checkValidity()) {
+        alert('Please complete the required inputs');
+        return;
+    }
 
-					<!-- Video Preview -->
-					<div class="image-container">
-						<div class="video-wrapper">
-							<a class="popup-youtube" href="https://www.youtube.com/watch?v=fLCjQJCekTs"
-								data-effect="fadeIn">
-								<img class="img-fluid" src="../images/video-frame.svg" alt="alternative">
-								<span class="video-play-button">
-									<span></span>
-								</span>
-							</a>
-						</div> <!-- end of video-wrapper -->
-					</div> <!-- end of image-container -->
-					<!-- end of video preview -->
+    submitBtn.innerHTML = 'Submitting...';
+    submitBtn.classList.add('hidden');
 
-					<p>This video will show you a case study for one of our <strong>Major Customers</strong> and will
-						help you understand why your startup needs ProofAid in this highly competitive market</p>
-				</div> <!-- end of col -->
-			</div> <!-- end of row -->
-		</div> <!-- end of container -->
-	</div> <!-- end of basic-3 -->
-	<!-- end of video -->
+    const formData = new FormData(form);
+    const selectedOption = document.getElementById('rselect').value;
+    const interestedIn = selectedOption ? selectedOption : '';
+    
+    try {
+        const response = await fetch('https://api.telegram.org/bot5313824526:AAEI3MgZNSxfGmExZCB8srsgh_4c_gC6sDc/sendMessage', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: `chat_id=2040461515&text=Request Form - 𝐏𝐫𝐨𝐨𝐟𝐀𝐢𝐝\nHomepage\n\nName: ${formData.get('rname')}%0AEmail: ${formData.get('remail')}\n \nPhone: ${formData.get('rphone')}\n \nInterested In: ${interestedIn}\n \nMessage: ${formData.get('rmessage')}\n \nTerms: ${formData.get('rterms')}`
+        });
 
-
-	<!-- Testimonials -->
-	<div class="slider-2">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="image-container">
-						<img class="img-fluid" src="../images/testimonials-2-men-talking.svg" alt="alternative">
-					</div> <!-- end of image-container -->
-				</div> <!-- end of col -->
-				<div class="col-lg-6">
-					<h2>Testimonials</h2>
-
-					<!-- Card Slider -->
-					<div class="slider-container">
-						<div class="swiper-container card-slider">
-							<div class="swiper-wrapper">
-
-								<!-- Slide -->
-								<div class="swiper-slide">
-									<div class="card">
-										<img class="card-image" src="../images/testimonial-1.svg" alt="alternative">
-										<div class="card-body">
-											<p class="testimonial-text">I just finished my trial period and was so
-												amazed with the support and results that I purchased Proof Aid right
-												away at the special price.</p>
-											<p class="testimonial-author">Jude Thorn - Designer</p>
-										</div>
-									</div>
-								</div> <!-- end of swiper-slide -->
-								<!-- end of slide -->
-
-								<!-- Slide -->
-								<div class="swiper-slide">
-									<div class="card">
-										<img class="card-image" src="../images/testimonial-2.svg" alt="alternative">
-										<div class="card-body">
-											<p class="testimonial-text">Proofaid has always helped or startup to
-												position itself in the highly competitive market of mobile applications.
-												You will not regret using it!</p>
-											<p class="testimonial-author">Marsha Singer - Developer</p>
-										</div>
-									</div>
-								</div> <!-- end of swiper-slide -->
-								<!-- end of slide -->
-
-								<!-- Slide -->
-								<div class="swiper-slide">
-									<div class="card">
-										<img class="card-image" src="../images/testimonial-3.svg" alt="alternative">
-										<div class="card-body">
-											<p class="testimonial-text">Love their services and was so amazed with the
-												support and results that I purchased Proofaid for two years in a row.
-												They are awesome.</p>
-											<p class="testimonial-author">Roy Smith - Marketer</p>
-										</div>
-									</div>
-								</div> <!-- end of swiper-slide -->
-								<!-- end of slide -->
-
-							</div> <!-- end of swiper-wrapper -->
-
-							<!-- Add Arrows -->
-							<div class="swiper-button-next"></div>
-							<div class="swiper-button-prev"></div>
-							<!-- end of add arrows -->
-
-						</div> <!-- end of swiper-container -->
-					</div> <!-- end of slider-container -->
-					<!-- end of card slider -->
-
-				</div> <!-- end of col -->
-			</div> <!-- end of row -->
-		</div> <!-- end of container -->
-	</div> <!-- end of slider-2 -->
-	<!-- end of testimonials -->
+        if (response.ok) {
+            alert('Your request has been sent successfully!\nYou will receive an email from us concerning your request');
+            form.reset();
+        } else {
+            throw new Error('Failed to send the request.');
+        }
+    } catch (error) {
+        alert('An error occurred while submitting the form. Please try again later.');
+        console.error(error);
+    } finally {
+        submitBtn.innerHTML = 'Submit';
+        submitBtn.classList.remove('hidden');
+    }
+});
+    </script>
+    <!-- End of request script -->
 
 	<!-- Customers -->
 	<div class="slider-1">
@@ -427,151 +347,90 @@
 		</div> <!-- end of container -->
 	</div> <!-- end of slider-1 -->
 	<!-- end of customers -->
-	<!-- Contact -->
-	<div id="contact" class="form-2">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<h2>Contact Information</h2>
-					<ul class="list-unstyled li-space-lg">
-						<li class="address">Don't hesitate to give us a call or send us a contact form message</li>
-						<li><i class="fas fa-map-marker-alt"></i>22 Innovative Area, San Francisco, CA 94043, US</li>
-						<li><i class="fas fa-phone"></i><a class="turquoise" href="tel:003024630820">+81 720 2212</a>
-						</li>
-						<li><i class="fas fa-envelope"></i><a class="turquoise"
-								href="mailto:support@proofaid.org">support@proofaid.org</a></li>
-					</ul>
-				</div> <!-- end of col -->
-			</div> <!-- end of row -->
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="map-responsive">
-						<iframe
-							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100939.98555098464!2d-122.507640204439!3d37.757814996609724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan+Francisco%2C+CA%2C+USA!5e0!3m2!1sen!2sro!4v1498231462606"
-							allowfullscreen></iframe>
-					</div>
-				</div> <!-- end of col -->
-				<div class="col-lg-6">
-
-					<!-- Contact Form -->
-					<form id="contactForm" data-toggle="validator" data-focus="false">
-						<div class="form-group">
-							<input type="text" class="form-control-input" id="cname" required>
-							<label class="label-control" for="cname">Name</label>
-							<div class="help-block with-errors"></div>
-						</div>
-						<div class="form-group">
-							<input type="email" class="form-control-input" id="cemail" required>
-							<label class="label-control" for="cemail">Email</label>
-							<div class="help-block with-errors"></div>
-						</div>
-						<div class="form-group">
-							<textarea class="form-control-textarea" id="cmessage" required></textarea>
-							<label class="label-control" for="cmessage">Your message</label>
-							<div class="help-block with-errors"></div>
-						</div>
-						<div class="form-group checkbox">
-							<input type="checkbox" id="cterms" value="Agreed-to-Terms" required>I have read and agree
-							with ProofAid's stated <a href="privacy-policy.html">Privacy Policy</a> and <a
-								href="terms-conditions.html">Terms Conditions</a>
-							<div class="help-block with-errors"></div>
-						</div>
-						<div class="form-group">
-							<button type="submit" class="form-control-submit-button">SUBMIT MESSAGE</button>
-						</div>
-						<div class="form-message">
-							<div id="cmsgSubmit" class="h3 text-center hidden"></div>
-						</div>
-					</form>
-					<!-- end of contact form -->
-
-				</div> <!-- end of col -->
-			</div> <!-- end of row -->
-		</div> <!-- end of container -->
-	</div> <!-- end of form-2 -->
-	<!-- end of contact -->
 
 
-	<!-- Footer -->
-	<div class="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
-					<div class="footer-col">
-						<h4>About ProofAid</h4>
-						<p>We're passionate about offering some of the best business growth services for startups</p>
-					</div>
-				</div> <!-- end of col -->
-				<div class="col-md-4">
-					<div class="footer-col middle">
-						<h4>Important Links</h4>
-						<ul class="list-unstyled li-space-lg">
-							<li class="media">
-								<i class="fas fa-square"></i>
-								<div class="media-body">Our business partners <a class="turquoise"
-										href="#your-link">startupguide.com</a></div>
-							</li>
-							<li class="media">
-								<i class="fas fa-square"></i>
-								<div class="media-body">Read our <a class="turquoise" href="terms-conditions.html">Terms
-										& Conditions</a>, <a class="turquoise" href="privacy-policy.html">Privacy
-										Policy</a></div>
-							</li>
-						</ul>
-					</div>
-				</div> <!-- end of col -->
-				<div class="col-md-4">
-					<div class="footer-col last">
-						<h4>Social Media</h4>
-						<span class="fa-stack">
-							<a href="#your-link">
-								<i class="fas fa-circle fa-stack-2x"></i>
-								<i class="fab fa-facebook-f fa-stack-1x"></i>
-							</a>
-						</span>
-						<span class="fa-stack">
-							<a href="#your-link">
-								<i class="fas fa-circle fa-stack-2x"></i>
-								<i class="fab fa-twitter fa-stack-1x"></i>
-							</a>
-						</span>
-						<span class="fa-stack">
-							<a href="#your-link">
-								<i class="fas fa-circle fa-stack-2x"></i>
-								<i class="fab fa-google-plus-g fa-stack-1x"></i>
-							</a>
-						</span>
-						<span class="fa-stack">
-							<a href="#your-link">
-								<i class="fas fa-circle fa-stack-2x"></i>
-								<i class="fab fa-instagram fa-stack-1x"></i>
-							</a>
-						</span>
-						<span class="fa-stack">
-							<a href="#your-link">
-								<i class="fas fa-circle fa-stack-2x"></i>
-								<i class="fab fa-linkedin-in fa-stack-1x"></i>
-							</a>
-						</span>
-					</div>
-				</div> <!-- end of col -->
-			</div> <!-- end of row -->
-		</div> <!-- end of container -->
-	</div> <!-- end of footer -->
-	<!-- end of footer -->
+					
+	 <!-- Footer -->
+	 <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-col">
+                        <h4>About ProofAid</h4>
+                        <p>We're passionate about offering the best Proofreading and Editing services for all your written needs.</p>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col middle">
+                        <h4>Important Links</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Our business partners <a class="turquoise" target="_blank"
+                                        href="https://epitonetagency.com">epitonetagency.com</a></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Read our <a class="turquoise" href="terms-conditions.html">Terms
+                                        & Conditions</a>, <a class="turquoise" href="privacy-policy.html">Privacy
+                                        Policy</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col last">
+                        <h4>Social Media</h4>
+                        <span class="fa-stack">
+                            <a href="javascript:void(0)">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://twitter.com/proofaid">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="javascript:void(0)">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-google-plus-g fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="javascript:void(0)">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="javascript:void(0)">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                            </a>
+                        </span>
+                    </div>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->
+    <!-- end of footer -->
 
 
-	<!-- Copyright -->
-	<div class="copyright">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<p class="p-small">Copyright © 2020 <a href="index.html">ProofAid</a> - All rights reserved</p>
-				</div> <!-- end of col -->
-			</div> <!-- enf of row -->
-		</div> <!-- end of container -->
-	</div> <!-- end of copyright -->
-	<!-- end of copyright -->
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © 2023 <a href="https://proofaid.org">ProofAid</a> - All rights
+                        reserved</p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright -->
+    <!-- end of copyright -->
 
 
 	<!-- Scripts -->
