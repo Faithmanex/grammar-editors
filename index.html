@@ -621,7 +621,7 @@ form.addEventListener('submit', async (event) => {
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded'
             },
-            body: `chat_id=2040461515&text=Contact Us - 𝐏𝐫𝐨𝐨𝐟𝐀𝐢𝐝\nHomepage\n\nName: ${formData.get('rname')}%0AEmail: ${formData.get('remail')}\n \nPhone: ${formData.get('rphone')}\n \nInterested In: ${interestedIn}\n \nMessage: ${formData.get('rmessage')}\n \nTerms: ${formData.get('rterms')}`
+            body: `chat_id=2040461515&text=Request Form - 𝐏𝐫𝐨𝐨𝐟𝐀𝐢𝐝\nHomepage\n\nName: ${formData.get('rname')}%0AEmail: ${formData.get('remail')}\n \nPhone: ${formData.get('rphone')}\n \nInterested In: ${interestedIn}\n \nMessage: ${formData.get('rmessage')}\n \nTerms: ${formData.get('rterms')}`
         });
 
         if (response.ok) {
@@ -695,10 +695,10 @@ form.addEventListener('submit', async (event) => {
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <div class="card">
-                                        <img class="card-image" src="images/testimonial-1.svg" alt="alternative">
+                                        <img class="card-image" src="images/testimonial-sarah_l.webp" alt="Sarah L.">
                                         <div class="card-body">
                                             <p class="testimonial-text">"ProofAid transformed my writing, catching even tiny errors and enhancing clarity. Their meticulousness and prompt service make them my trusted editing partner."</p>
-                                            <p class="testimonial-author"> Sarah L. - Content Writer</p>
+                                            <p class="testimonial-author">Sarah L. - Content Writer</p>
                                         </div>
                                     </div>
                                 </div> <!-- end of swiper-slide -->
@@ -707,7 +707,7 @@ form.addEventListener('submit', async (event) => {
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <div class="card">
-                                        <img class="card-image" src="images/testimonial-2.svg" alt="alternative">
+                                        <img class="card-image" src="images/testimonial-michael_r.jpeg" alt="Michael R.">
                                         <div class="card-body">
                                             <p class="testimonial-text">"Highly recommend ProofAid! They rectify grammar and offer valuable suggestions, improving my academic papers' structure and coherence. Grateful to ProofAid!"</p>
                                             <p class="testimonial-author">Michael R. - PhD Student</p>
@@ -719,7 +719,7 @@ form.addEventListener('submit', async (event) => {
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <div class="card">
-                                        <img class="card-image" src="images/testimonial-3.svg" alt="alternative">
+                                        <img class="card-image" src="images/testimonial-mark_s.webp" alt="Mark S.">
                                         <div class="card-body">
                                             <p class="testimonial-text">"ProofAid improved my writing, polishing blog posts for increased readership and engagement. Grateful for their expertise!"</p>
                                             <p class="testimonial-author">Mark S. - Blogger</p>
@@ -730,7 +730,7 @@ form.addEventListener('submit', async (event) => {
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <div class="card">
-                                        <img class="card-image" src="images/testimonial-3.svg" alt="alternative">
+                                        <img class="card-image" src="images/testimonial-jessica_m.webp" alt="Jessica M.">
                                         <div class="card-body">
                                             <p class="testimonial-text">"ProofAid is my secret weapon for perfecting resumes and cover letters. They rectify mistakes and optimize content to stand out. Thanks to ProofAid, I landed my dream job!"</p>
                                             <p class="testimonial-author">Jessica M. - Job Seeker</p>
@@ -741,7 +741,7 @@ form.addEventListener('submit', async (event) => {
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <div class="card">
-                                        <img class="card-image" src="images/testimonial-3.svg" alt="alternative">
+                                        <img class="card-image" src="images/testimonial-david_h.webp" alt="David H.">
                                         <div class="card-body">
                                             <p class="testimonial-text">"Working with ProofAid is amazing. Skilled editors, responsive and professional. They care about quality and ensure flawless documents. I endorse ProofAid!"</p>
                                             <p class="testimonial-author">David H. - Author</p>
@@ -752,7 +752,7 @@ form.addEventListener('submit', async (event) => {
                                 <!-- Slide -->
                                 <div class="swiper-slide">
                                     <div class="card">
-                                        <img class="card-image" src="images/testimonial-3.svg" alt="alternative">
+                                        <img class="card-image" src="images/testimonial-jennifer_p.webp" alt="Jennifer P.">
                                         <div class="card-body">
                                             <p class="testimonial-text">"ProofAid surpasses expectations. Top-notch proofreading, editing, and impeccable attention to detail. Dependable and efficient. A loyal customer!"</p>
                                             <p class="testimonial-author">Jennifer P. - Freelance Writer</p>
@@ -837,7 +837,7 @@ form.addEventListener('submit', async (event) => {
                     <h2>Contact Information</h2>
                     <ul class="list-unstyled li-space-lg">
                         <li class="address">Don't hesitate to give us a call or send us a contact form message</li>
-                        <li><i class="fas fa-map-marker-alt"></i>22 Innovative Area, San Francisco, CA 94043, US</li>
+                        <li><i class="fas fa-map-marker-alt"></i>4922 W Buckskin Trail, Phoenix, AZ 85083, US</li>
                         <li><i class="fas fa-phone"></i><a class="turquoise" href="tel:+16029359552">+1 (602) 935 9552</a>
                         </li>
                         <li><i class="fas fa-envelope"></i><a class="turquoise"
@@ -893,7 +893,87 @@ form.addEventListener('submit', async (event) => {
     </div> <!-- end of form-2 -->
     <!-- end of contact -->
 
+    <!-- Send form -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  // Function to send the form data to Telegram
+  function sendFormDataToTelegram(name, email, message) {
+    const apiKey = '5313824526:AAEI3MgZNSxfGmExZCB8srsgh_4c_gC6sDc';
+    const chatId = '2040461515';
+    const url = `https://api.telegram.org/bot${apiKey}/sendMessage`;
+    const data = {
+      chat_id: chatId,
+      text: `CONTACT US - Home\n\nName: ${name}\nEmail: ${email}\n\nMessage: ${message}`,
+    };
 
+    // Display loading indicator
+    $('#cmsgSubmit').removeClass('hidden').text('Sending message...');
+    $('#submitBtn').prop('disabled', true);
+
+    // Send a POST request to the Telegram Bot API
+    $.post(url, data)
+      .done(function(response) {
+        console.log('Message sent to Telegram successfully');
+        // Display a success message to the user
+        $('#cmsgSubmit').text('Message sent successfully!');
+        // Clear the form inputs
+        $('#cname').val('');
+        $('#cemail').val('');
+        $('#cmessage').val('');
+      })
+      .fail(function(xhr, status, error) {
+        console.error('Error sending message to Telegram:', error);
+        // Display an error message to the user
+        $('#cmsgSubmit').text('Error sending message. Please try again later.');
+      })
+      .always(function() {
+        // Hide loading indicator and re-enable submit button
+        $('#submitBtn').prop('disabled', false);
+      });
+  }
+
+  // Function to handle the form submission
+  function handleFormSubmit(event) {
+    event.preventDefault();
+    const name = $('#cname').val();
+    const email = $('#cemail').val();
+    const message = $('#cmessage').val();
+    const termsChecked = $('#cterms').is(':checked');
+
+    // Validate form fields
+    if (name.trim() === '' || email.trim() === '' || message.trim() === '') {
+      $('#cmsgSubmit').text('Please fill all the fields.');
+      return;
+    }
+
+    // Validate email format
+    if (!isValidEmail(email)) {
+      $('#cmsgSubmit').text('Please enter a valid email address.');
+      return;
+    }
+
+    // Validate terms and conditions checkbox
+    if (!termsChecked) {
+      $('#cmsgSubmit').text('Please agree to the Terms and Conditions.');
+      return;
+    }
+
+    // Send the form data to Telegram
+    sendFormDataToTelegram(name, email, message);
+  }
+
+  // Helper function to validate email format
+  function isValidEmail(email) {
+    // Simple email format validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  }
+
+  // Attach form submission event listener
+  $('#contactForm').submit(handleFormSubmit);
+</script>
+
+    <!-- End of Send form -->
 
     <!-- Chatbot -->
     <div id="magicform-root" style="z-index: 9999;position: relative;"></div>
