@@ -1,4 +1,4 @@
-# Grammar Editors
+# Word Mend
 
 This is a simple HTML website with basic meta tags for responsiveness and compatibility.
 
