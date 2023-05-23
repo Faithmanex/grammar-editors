@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+    </head>
+    <body>
+        
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    .cards-2 {
+      padding-top: 3rem;
+      padding-bottom: 2.75rem;
+      text-align: center;
+    }
+
+    .cards-2 h2 {
+      margin-bottom: 1rem;
+    }
+
+    .cards-2 .card {
+      display: block;
+      max-width: 20rem;
+      margin-right: auto;
+      margin-bottom: 6rem;
+      margin-left: auto;
+      border: 1px solid #c4d8dc;
+      border-radius: 0.5rem;
+      vertical-align: top;
+    }
+
+    .cards-2 .card .card-body {
+      padding: 2.5rem 2.75rem 1.875rem 2.5rem;
+    }
+
+    .cards-2 .card .card-title {
+      margin-bottom: 0.625rem;
+      color: #393939;
+      font-weight: 700;
+      font-size: 1.75rem;
+      line-height: 2.25rem;
+      text-align: center;
+    }
+
+    .cards-2 .card .card-subtitle {
+      margin-bottom: 1.75rem;
+    }
+
+    .cards-2 .card .cell-divide-hr {
+      height: 1px;
+      margin-top: 0;
+      margin-bottom: 0;
+      border: none;
+      background-color: #c4d8dc;
+    }
+
+    .cards-2 .card .price {
+      padding-top: 0.875rem;
+      padding-bottom: 1.5rem;
+    }
+
+    .cards-2 .card .value {
+      color: #00bfd8;
+      font-weight: 700;
+      font-size: 1.5rem;
+      line-height: 4rem;
+      text-align: center;
+    }
+
+    .cards-2 .card .currency {
+      margin-right: 0.375rem;
+      color: #00bfd8;
+      font-size: 1.5rem;
+      vertical-align: 56%;
+    }
+
+    .cards-2 .card .frequency {
+      margin-top: 0.25rem;
+      font-size: 0.875rem;
+      text-align: center;
+    }
+
+    .cards-2 .card .list-unstyled {
+      margin-top: 1.875rem;
+      margin-bottom: 1.625rem;
+      text-align: left;
+    }
+
+    .cards-2 .card .list-unstyled.li-space-lg li {
+      margin-bottom: 0.5rem;
+    }
+
+    .cards-2 .card .list-unstyled .fas {
+      color: #00bfd8;
+      line-height: 1.375rem;
+    }
+
+    .cards-2 .card .list-unstyled .fas.fa-times {
+      margin-left: 0.1875rem;
+      margin-right: 0.125rem;
+      color: #777b7e;
+    }
+
+    .cards-2 .card .list-unstyled .media-body {
+      margin-left: 0.625rem;
+    }
+
+    .cards-2 .card .button-wrapper {
+      position: absolute;
+      right: 0;
+      bottom: -1.25rem;
+      left: 0;
+      text-align: center;
+    }
+
+    .cards-2 .card .btn-solid-reg:hover {
+      background-color: #fff;
+    }
+
+    /* Best Value Label */
+    .cards-2 .card .label {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 10.625rem;
+      height: 10.625rem;
+      overflow: hidden;
+    }
+
+    .cards-2 .card .label .best-value {
+      position: relative;
+      width: 13.75rem;
+      padding: 0.3125rem 0 0.3125rem 4.125rem;
+      background-color: #00bfd8;
+      color: #fff;
+      -webkit-transform: rotate(45deg) translate3d(0, 0, 0);
+      -ms-transform: rotate(45deg) translate3d(0, 0, 0);
+      transform: rotate(45deg) translate3d(0, 0, 0);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container mt-5 cards-2">
+
+    <h1 class="text-center mb-5">Pricing Page: Proofreading and Editing Services</h1>
+
+    <h2>Proofreading Services:</h2>
+
+    <div class="row mb-4">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Basic Proofreading</h5>
+            <p class="card-text">Ideal for well-written documents that require a final polish.</p>
+            <p class="card-text">Includes correction of grammar, spelling, punctuation, and minor sentence structure improvements.</p>
+            <div class="cell-divide-hr"></div>
+            <div class="price">
+              <span class="value">$0.02</span>
+              <span class="currency">USD</span>
+              <span class="frequency">per word</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Advanced Proofreading</h5>
+            <p class="card-text">Suitable for documents requiring more extensive attention to detail.</p>
+            <p class="card-text">Includes all features of Basic Proofreading, with additional emphasis on improving sentence structure and enhancing overall readability.</p>
+            <div class="cell-divide-hr"></div>
+            <div class="price">
+              <span class="value">$0.03</span>
+              <span class="currency">USD</span>
+              <span class="frequency">per word</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2>Editing Services:</h2>
+
+    <div class="row mb-4">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Substantive Editing</h5>
+            <p class="card-text">Recommended for documents that require substantial revisions and improvements.</p>
+            <p class="card-text">Includes restructuring of sentences and paragraphs, enhancing logical flow, addressing inconsistencies, and rephrasing where necessary.</p>
+            <div class="cell-divide-hr"></div>
+            <div class="price">
+              <span class="value">$0.05</span>
+              <span class="currency">USD</span>
+              <span class="frequency">per word</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Developmental Editing</h5>
+            <p class="card-text">For projects that require comprehensive editing and improvement from the ground up.</p>
+            <p class="card-text">Includes all features of Substantive Editing, with additional focus on structure, clarity, and content organization.</p>
+            <div class="cell-divide-hr"></div>
+            <div class="price">
+              <span class="value">$0.07</span>
+              <span class="currency">USD</span>
+              <span class="frequency">per word</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2>Additional Services:</h2>
+
+    <div class="row mb-4">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Formatting Assistance</h5>
+            <p class="card-text">For ensuring consistent formatting, style, and adherence to specific guidelines (e.g., APA, MLA).</p>
+            <div class="cell-divide-hr"></div>
+            <p class="card-text">Price: $10 per document</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Express Delivery</h5>
+            <p class="card-text">For urgent projects with a turnaround time of 24 hours or less, excluding weekends and holidays.</p>
+            <div class="cell-divide-hr"></div>
+            <p class="card-text">Price: Additional 20% of the total cost</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2>How to Proceed:</h2>
+
+    <ol>
+      <li>Request a Quote: To obtain a personalized quote for your specific project, please provide us with the details by filling out the form on our website.</li>
+      <li>Submit your Document: After receiving the quote, you can securely upload your document to our platform.</li>
+      <li>Payment: We accept secure online payments through various methods, including credit/debit cards and PayPal.</li>
+      <li>Proofreading/Editing Process: Our skilled editors will meticulously review your document, making necessary improvements while maintaining your unique voice and message.</li>
+      <li>Delivery: Once the editing process is complete, we will return your polished document to you within the agreed-upon timeframe.</li>
+    </ol>
+
+    <p class="text-center mt-5">Please note that all prices mentioned above are in USD.</p>
+
+    <p class="text-center">If you have any questions or require further assistance, please don't hesitate to contact our support team. We look forward to helping you enhance the quality of your written work.</p>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+   
+   <hr>
+   
+   <br><br>
+   <br><br>
+   <br><br>
+   
+   
+   <ol>
+    <li><strong>Submit Your Document:</strong> Fill out our online form and upload your document for editing.</li>
+    <li><strong>Get a Quote:</strong> We will review your document and provide you with a quote based on the length, complexity, and turnaround time.</li>
+    <li><strong>Secure Payment:</strong> Once you approve the quote, you can make a secure payment using our preferred payment methods.</li>
+    <li><strong>Editing Process:</strong> Our editor will thoroughly review your document, addressing grammar, structure, clarity, formatting, and other aspects.</li>
+    <li><strong>Delivery:</strong> We will deliver the edited document to you within the agreed-upon timeframe, ensuring that it meets your expectations.</li>
+    <li><strong>Review and Feedback:</strong> Take the time to review the edited document and provide us with your valuable feedback.</li>
+  </ol>
+   
+   
+   <hr>
+   <br><br>
+   <br><br>
+   <br><br>
+   
+   
+   **Pricing Page: Proofreading and Editing Services**
+
+Thank you for considering our professional proofreading and editing services. We are dedicated to helping you enhance the quality and effectiveness of your written content. Below you will find our transparent pricing structure tailored to meet your specific needs.
+
+**Proofreading Services:**
+
+Our proofreading service focuses on identifying and correcting errors in grammar, punctuation, spelling, and sentence structure. We ensure your document is free from typographical mistakes and maintains a consistent style throughout.
+
+1. Basic Proofreading: $0.02 per word
+   - Ideal for well-written documents that require a final polish.
+   - Includes correction of grammar, spelling, punctuation, and minor sentence structure improvements.
+
+2. Advanced Proofreading: $0.03 per word
+   - Suitable for documents requiring more extensive attention to detail.
+   - Includes all features of Basic Proofreading, with additional emphasis on improving sentence structure and enhancing overall readability.
+
+**Editing Services:**
+
+Our editing service encompasses proofreading and goes beyond it to refine the clarity, coherence, and organization of your content. We work to ensure your message is effectively communicated and your writing style is enhanced.
+
+1. Substantive Editing: $0.05 per word
+   - Recommended for documents that require substantial revisions and improvements.
+   - Includes restructuring of sentences and paragraphs, enhancing logical flow, addressing inconsistencies, and rephrasing where necessary.
+
+2. Copyediting: $0.04 per word
+   - Perfect for documents with good structure, but requiring refinement to achieve a professional standard.
+   - Includes grammar, spelling, punctuation, and sentence structure improvements, as well as suggestions for enhancing clarity and coherence.
+
+**Additional Services:**
+
+1. Formatting: $10 per document
+   - We will format your document according to your preferred style guide (e.g., APA, MLA, Chicago).
+
+2. Express Delivery: Additional 20% of the total cost
+   - For urgent projects with a turnaround time of 24 hours or less, excluding weekends and holidays.
+
+**How to Proceed:**
+
+1. Request a Quote: To obtain a personalized quote for your specific project, please provide us with the details by filling out the form on our website.
+
+2. Submit your Document: After receiving the quote, you can securely upload your document to our platform.
+
+3. Payment: We accept secure online payments through various methods, including credit/debit cards and PayPal.
+
+4. Proofreading/Editing Process: Our skilled editors will meticulously review your document, making necessary improvements while maintaining your unique voice and message.
+
+5. Delivery: Once the editing process is complete, we will return your polished document to you within the agreed-upon timeframe.
+
+Please note that all prices mentioned above are in USD.
+
+If you have any questions or require further assistance, please don't hesitate to contact our support team. We look forward to helping you enhance the quality of your written work.
+   <br><br>
+   <br><br>
+   <hr>
+   Note:
+
+The word count will be calculated based on the original document.
+Prices may vary depending on the complexity and length of the document.
+We offer discounts for bulk orders or recurring clients.
+All documents undergo strict confidentiality measures to protect your content.
+   <br><br>
+   
+   <br><br>
+   <hr>
+   https://the-efa.org/rates/
+   
+   <br><br>
+   <br><br>
+   <hr>
+   
+   <section>
+  <h2>Why Choose Us</h2>
+  <ul>
+    <li><strong>Expert Editors:</strong> Our team consists of highly skilled editors with extensive experience in academic writing across various disciplines.</li>
+    <li><strong>Quality Assurance:</strong> We have a rigorous quality control process in place to ensure that every document meets the highest standards of excellence.</li>
+    <li><strong>Timely Delivery:</strong> We understand the importance of deadlines, and we strive to deliver your edited document within the agreed-upon timeframe.</li>
+    <li><strong>Customized Approach:</strong> We take into account your specific requirements and provide personalized editing services to meet your needs.</li>
+    <li><strong>Affordable Pricing:</strong> We offer competitive pricing plans that are tailored to suit different academic levels and document lengths.</li>
+    <li><strong>Customer Support:</strong> Our friendly customer support team is available to answer any queries you may have and provide assistance throughout the editing process.</li>
+  </ul>
+</section>
+    </body>
+</html>
