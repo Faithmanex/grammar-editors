@@ -893,33 +893,31 @@ screen and (-ms-high-contrast: none) {
 
 .cards-1 .card {
 	max-width: 21rem;
-	margin-right: auto;
-	margin-bottom: 4.5rem;
-	margin-left: auto;
-	height: 350px;
-	padding: 3.25rem 2rem 2rem 2rem;
-	border: 1px solid #c4d8dc;
-	border-radius: 0.5rem;
-	background: transparent;
-	transition: box-shadow .05s;
-
+    margin-right: auto;
+    margin-bottom: 2.5rem;
+    margin-left: auto;
+    height: 270px;
+    padding: 1rem 0.5rem;
+    border: 1px solid #c4d8dc;
+    border-radius: 0.5rem;
+    background: transparent;
+    transition: box-shadow .05s;
 }
 
 .cards-1 .card:hover {
-	border: solid #00bfd8 2px;
+	border: solid #485557 2px;
 	box-shadow: #6e969c 0px 0px 20px 0px;
 
 
 }
 
 .cards-1 .card-image {
-	width: 6rem;
-	height: 6rem;
-	margin-right: auto;
-	margin-bottom: 2rem;
-	margin-left: auto;
+	width: 5rem;
+    height: 5rem;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    margin-left: auto;
 }
-
 .cards-1 .card-title {
 	margin-bottom: 0.875rem;
 }
@@ -1496,6 +1494,24 @@ screen and (-ms-high-contrast: none) {
 }
 
 
+
+/*********************/
+/*   How it works    */
+/*********************/
+.how-it-works-container {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: auto;
+	align-content: center;
+  }
+
+  .card-item {
+	flex: 0 0 auto;
+	margin: 13px;
+  }
 /*********************/
 /*     14. About     */
 /*********************/
