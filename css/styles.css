@@ -1498,6 +1498,15 @@ screen and (-ms-high-contrast: none) {
 /*********************/
 /*   How it works    */
 /*********************/
+.how-it-works-container {
+	margin: 3rem auto;
+}
+
+.how-it-works-container h3 {
+	margin: 2rem auto;
+	text-align: center;
+}
+
 .how-it-works  {
 		display: flex;
 		margin-left: 5%;
