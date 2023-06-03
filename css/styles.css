@@ -697,12 +697,6 @@ screen and (-ms-high-contrast: none) {
 	height: 120%;
 }
 
-.navbar-brand.logo-image img {
-	width: 3.5rem;
-	margin: 0;
-	height: 120%;
-}
-
 .navbar-custom .navbar-brand.logo-text {
 	font: 600 2rem/1.5rem "Raleway", sans-serif;
 	color: #393939;
@@ -1531,6 +1525,11 @@ screen and (-ms-high-contrast: none) {
 		text-align: center;
 	  }
 
+	  .how-it-works img {
+	width: 4rem;
+	margin: 5px 2px -5px 0px;
+	height: 140%;
+}
 /*********************/
 /*     14. About     */
 /*********************/
