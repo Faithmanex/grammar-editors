@@ -899,25 +899,39 @@ screen and (-ms-high-contrast: none) {
 	margin-left: auto;
 	height: 270px;
 	padding: 1rem 0.5rem;
-	border: 1px solid #c4d8dc;
+	border: 3px solid #c4d8dc;
 	border-radius: 0.5rem;
 	background: transparent;
 	transition: box-shadow .05s;
 }
 
 .cards-1 .card:hover {
-	box-shadow: #6e969c 0px 0px 20px 0px;
-	background-color: #00bfd825;
+	box-shadow: 11px 11px 23px #000000, -11px -11px 23px #00bfd8;
+	height: 275px;
+	/* box-shadow: #0198af 4px 4px 20px 0px; */
+	background-color: #04c2db18;
 	transition: all.5s;
+	border: 0px solid #c4d8dc;
 
 }
 
 .cards-1 .card-image {
 	width: 5rem;
+	mix-blend-mode: multiply;
 	height: 5rem;
 	margin-right: auto;
 	margin-bottom: 1rem;
 	margin-left: auto;
+}
+
+.cards-1 .card-image-acad {
+	width: 7rem;
+	mix-blend-mode: multiply;
+	height: 7rem;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: -0.2rem;
+	margin-bottom: -1rem;
 }
 
 .cards-1 .card-title {
