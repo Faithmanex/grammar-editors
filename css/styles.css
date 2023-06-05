@@ -906,9 +906,9 @@ screen and (-ms-high-contrast: none) {
 }
 
 .cards-1 .card:hover {
-	border: solid #485557 2px;
 	box-shadow: #6e969c 0px 0px 20px 0px;
-
+	background-color: #00bfd825;
+	transition: all.5s;
 
 }
 
