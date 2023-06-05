@@ -1535,7 +1535,7 @@ img .div-border-top {
 
 }
 
-/*  */
+/* How it works */
 .how-it-works {
 	display: flex;
 	justify-content: center;
@@ -1560,6 +1560,28 @@ img .div-border-top {
 	height: 140%;
 }
 
+
+
+
+/* ************* */
+/* Workflow */
+/* ******************** */
+
+
+.workflow {
+	width: 100%;
+	text-align: left;
+	display: block;
+}
+.workflow p {
+	text-align: left;
+
+}
+.workflow ul {
+	list-style:square;
+
+}
+/* End of workflow */
 /*********************/
 /*     14. About     */
 /*********************/
@@ -1971,6 +1993,20 @@ a:hover.back-to-top {
 	/* end of about */
 
 
+	/* Workflow */
+
+	.workflow {
+		width: 100%;
+		text-align: left;
+		display: flex;
+	}
+	.workflow p {
+		text-align: left;
+
+	}
+/* End of workflow */
+
+
 	/* Contact */
 	.form-2 .list-unstyled li {
 		display: inline-block;
@@ -2137,15 +2173,11 @@ a:hover.back-to-top {
 
 	/* Header */
 	.header {
-		background: linear-gradient(34deg, rgba(255, 255, 255, 1) 27%, rgba(0, 187, 225, 1) 100%);
 		background-size: cover;
-
 		width: 100%;
-		height: 100%;
 		background-size: cover;
 		background-position: center center;
 		background-repeat: repeat;
-		background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 2000 1333%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cmask id=%22b%22 x=%220%22 y=%220%22 width=%222000%22 height=%221333%22%3E%3Cpath fill=%22url(%23a)%22 d=%22M0 0h2000v1333H0z%22%2F%3E%3C%2Fmask%3E%3Cpath d=%22M0 0h2000v1333H0z%22%2F%3E%3Cg style=%22transform-origin:center center%22 stroke=%22%2300bfd8%22 mask=%22url(%23b)%22%3E%3Cpath fill=%22none%22 d=%22M0 0h87v87H0zM87 0h87v87H87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd817%22 d=%22M174 0h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd88e%22 d=%22M261 0h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M348 0h87v87h-87zM435 0h87v87h-87zM522 0h87v87h-87zM609 0h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd88f%22 d=%22M696 0h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M783 0h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd85e%22 d=%22M870 0h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M957 0h87v87h-87zM1044 0h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd8bd%22 d=%22M1131 0h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1218 0h87v87h-87zM1305 0h87v87h-87zM1392 0h87v87h-87zM1479 0h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd80a%22 d=%22M1566 0h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1653 0h87v87h-87zM1740 0h87v87h-87zM1827 0h87v87h-87zM1914 0h87v87h-87zM0 87h87v87H0zM87 87h87v87H87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd80f%22 d=%22M174 87h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M261 87h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd889%22 d=%22M348 87h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd85a%22 d=%22M435 87h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M522 87h87v87h-87zM609 87h87v87h-87zM696 87h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd85d%22 d=%22M783 87h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd8d8%22 d=%22M870 87h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M957 87h87v87h-87zM1044 87h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd8f6%22 d=%22M1131 87h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd859%22 d=%22M1218 87h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd8e5%22 d=%22M1305 87h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd865%22 d=%22M1392 87h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd895%22 d=%22M1479 87h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd802%22 d=%22M1566 87h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1653 87h87v87h-87zM1740 87h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd8b7%22 d=%22M1827 87h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1914 87h87v87h-87zM0 174h87v87H0zM87 174h87v87H87zM174 174h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd87b%22 d=%22M261 174h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M348 174h87v87h-87zM435 174h87v87h-87zM522 174h87v87h-87zM609 174h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd8e3%22 d=%22M696 174h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M783 174h87v87h-87zM870 174h87v87h-87zM957 174h87v87h-87zM1044 174h87v87h-87zM1131 174h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd899%22 d=%22M1218 174h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1305 174h87v87h-87zM1392 174h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd8d5%22 d=%22M1479 174h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd8fc%22 d=%22M1566 174h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd821%22 d=%22M1653 174h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1740 174h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd875%22 d=%22M1827 174h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd829%22 d=%22M1914 174h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M0 261h87v87H0zM87 261h87v87H87zM174 261h87v87h-87zM261 261h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd8e8%22 d=%22M348 261h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M435 261h87v87h-87zM522 261h87v87h-87zM609 261h87v87h-87zM696 261h87v87h-87zM783 261h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd82f%22 d=%22M870 261h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd86b%22 d=%22M957 261h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1044 261h87v87h-87zM1131 261h87v87h-87zM1218 261h87v87h-87zM1305 261h87v87h-87zM1392 261h87v87h-87zM1479 261h87v87h-87zM1566 261h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd850%22 d=%22M1653 261h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd878%22 d=%22M1740 261h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd893%22 d=%22M1827 261h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1914 261h87v87h-87zM0 348h87v87H0z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd850%22 d=%22M87 348h87v87H87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M174 348h87v87h-87zM261 348h87v87h-87zM348 348h87v87h-87zM435 348h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd878%22 d=%22M522 348h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd8d9%22 d=%22M609 348h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M696 348h87v87h-87zM783 348h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd89d%22 d=%22M870 348h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M957 348h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd815%22 d=%22M1044 348h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1131 348h87v87h-87zM1218 348h87v87h-87zM1305 348h87v87h-87zM1392 348h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd898%22 d=%22M1479 348h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1566 348h87v87h-87zM1653 348h87v87h-87zM1740 348h87v87h-87zM1827 348h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd80e%22 d=%22M1914 348h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd8cf%22 d=%22M0 435h87v87H0z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd8b9%22 d=%22M87 435h87v87H87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd8e5%22 d=%22M174 435h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M261 435h87v87h-87zM348 435h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd8ac%22 d=%22M435 435h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M522 435h87v87h-87zM609 435h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd85b%22 d=%22M696 435h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd8e5%22 d=%22M783 435h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd811%22 d=%22M870 435h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd850%22 d=%22M957 435h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1044 435h87v87h-87zM1131 435h87v87h-87zM1218 435h87v87h-87zM1305 435h87v87h-87zM1392 435h87v87h-87zM1479 435h87v87h-87zM1566 435h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd8b6%22 d=%22M1653 435h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1740 435h87v87h-87zM1827 435h87v87h-87zM1914 435h87v87h-87zM0 522h87v87H0zM87 522h87v87H87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd81c%22 d=%22M174 522h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M261 522h87v87h-87zM348 522h87v87h-87zM435 522h87v87h-87zM522 522h87v87h-87zM609 522h87v87h-87zM696 522h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd80c%22 d=%22M783 522h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M870 522h87v87h-87zM957 522h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd822%22 d=%22M1044 522h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd8a8%22 d=%22M1131 522h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd88e%22 d=%22M1218 522h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1305 522h87v87h-87zM1392 522h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd865%22 d=%22M1479 522h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd8bc%22 d=%22M1566 522h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1653 522h87v87h-87zM1740 522h87v87h-87zM1827 522h87v87h-87zM1914 522h87v87h-87zM0 609h87v87H0zM87 609h87v87H87zM174 609h87v87h-87zM261 609h87v87h-87zM348 609h87v87h-87zM435 609h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd81a%22 d=%22M522 609h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd8e2%22 d=%22M609 609h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd82b%22 d=%22M696 609h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M783 609h87v87h-87zM870 609h87v87h-87zM957 609h87v87h-87zM1044 609h87v87h-87zM1131 609h87v87h-87zM1218 609h87v87h-87zM1305 609h87v87h-87zM1392 609h87v87h-87zM1479 609h87v87h-87zM1566 609h87v87h-87zM1653 609h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd896%22 d=%22M1740 609h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd826%22 d=%22M1827 609h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1914 609h87v87h-87zM0 696h87v87H0zM87 696h87v87H87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd899%22 d=%22M174 696h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd8f0%22 d=%22M261 696h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M348 696h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd8b4%22 d=%22M435 696h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd841%22 d=%22M522 696h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M609 696h87v87h-87zM696 696h87v87h-87zM783 696h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd809%22 d=%22M870 696h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd886%22 d=%22M957 696h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1044 696h87v87h-87zM1131 696h87v87h-87zM1218 696h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd83a%22 d=%22M1305 696h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd8f3%22 d=%22M1392 696h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1479 696h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd86e%22 d=%22M1566 696h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1653 696h87v87h-87zM1740 696h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd81f%22 d=%22M1827 696h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd813%22 d=%22M1914 696h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M0 783h87v87H0zM87 783h87v87H87zM174 783h87v87h-87zM261 783h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd8f0%22 d=%22M348 783h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M435 783h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd8b5%22 d=%22M522 783h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M609 783h87v87h-87zM696 783h87v87h-87zM783 783h87v87h-87zM870 783h87v87h-87zM957 783h87v87h-87zM1044 783h87v87h-87zM1131 783h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd83e%22 d=%22M1218 783h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1305 783h87v87h-87zM1392 783h87v87h-87zM1479 783h87v87h-87zM1566 783h87v87h-87zM1653 783h87v87h-87zM1740 783h87v87h-87zM1827 783h87v87h-87zM1914 783h87v87h-87zM0 870h87v87H0zM87 870h87v87H87zM174 870h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd87b%22 d=%22M261 870h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd81e%22 d=%22M348 870h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M435 870h87v87h-87zM522 870h87v87h-87zM609 870h87v87h-87zM696 870h87v87h-87zM783 870h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd8ae%22 d=%22M870 870h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd82f%22 d=%22M957 870h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1044 870h87v87h-87zM1131 870h87v87h-87zM1218 870h87v87h-87zM1305 870h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd813%22 d=%22M1392 870h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1479 870h87v87h-87zM1566 870h87v87h-87zM1653 870h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd814%22 d=%22M1740 870h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1827 870h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd833%22 d=%22M1914 870h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd83c%22 d=%22M0 957h87v87H0z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M87 957h87v87H87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd88d%22 d=%22M174 957h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M261 957h87v87h-87zM348 957h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd8d0%22 d=%22M435 957h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M522 957h87v87h-87zM609 957h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd8eb%22 d=%22M696 957h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M783 957h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd83b%22 d=%22M870 957h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M957 957h87v87h-87zM1044 957h87v87h-87zM1131 957h87v87h-87zM1218 957h87v87h-87zM1305 957h87v87h-87zM1392 957h87v87h-87zM1479 957h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd848%22 d=%22M1566 957h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd8de%22 d=%22M1653 957h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1740 957h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd8da%22 d=%22M1827 957h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1914 957h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd8f5%22 d=%22M0 1044h87v87H0z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M87 1044h87v87H87zM174 1044h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd865%22 d=%22M261 1044h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M348 1044h87v87h-87zM435 1044h87v87h-87zM522 1044h87v87h-87zM609 1044h87v87h-87zM696 1044h87v87h-87zM783 1044h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd8e0%22 d=%22M870 1044h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd80d%22 d=%22M957 1044h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd8b6%22 d=%22M1044 1044h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1131 1044h87v87h-87zM1218 1044h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd8ad%22 d=%22M1305 1044h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1392 1044h87v87h-87zM1479 1044h87v87h-87zM1566 1044h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd8b9%22 d=%22M1653 1044h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1740 1044h87v87h-87zM1827 1044h87v87h-87zM1914 1044h87v87h-87zM0 1131h87v87H0zM87 1131h87v87H87zM174 1131h87v87h-87zM261 1131h87v87h-87zM348 1131h87v87h-87zM435 1131h87v87h-87zM522 1131h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd8f0%22 d=%22M609 1131h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M696 1131h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd870%22 d=%22M783 1131h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M870 1131h87v87h-87zM957 1131h87v87h-87zM1044 1131h87v87h-87zM1131 1131h87v87h-87zM1218 1131h87v87h-87zM1305 1131h87v87h-87zM1392 1131h87v87h-87zM1479 1131h87v87h-87zM1566 1131h87v87h-87zM1653 1131h87v87h-87zM1740 1131h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd82e%22 d=%22M1827 1131h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1914 1131h87v87h-87zM0 1218h87v87H0zM87 1218h87v87H87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd808%22 d=%22M174 1218h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M261 1218h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd8ba%22 d=%22M348 1218h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd8f2%22 d=%22M435 1218h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M522 1218h87v87h-87zM609 1218h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd86f%22 d=%22M696 1218h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M783 1218h87v87h-87zM870 1218h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd868%22 d=%22M957 1218h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1044 1218h87v87h-87zM1131 1218h87v87h-87zM1218 1218h87v87h-87zM1305 1218h87v87h-87zM1392 1218h87v87h-87zM1479 1218h87v87h-87zM1566 1218h87v87h-87zM1653 1218h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd82d%22 d=%22M1740 1218h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1827 1218h87v87h-87zM1914 1218h87v87h-87zM0 1305h87v87H0zM87 1305h87v87H87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd8cb%22 d=%22M174 1305h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd849%22 d=%22M261 1305h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M348 1305h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd843%22 d=%22M435 1305h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M522 1305h87v87h-87zM609 1305h87v87h-87zM696 1305h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd8fd%22 d=%22M783 1305h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd8e8%22 d=%22M870 1305h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M957 1305h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd879%22 d=%22M1044 1305h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd849%22 d=%22M1131 1305h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd802%22 d=%22M1218 1305h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1305 1305h87v87h-87zM1392 1305h87v87h-87zM1479 1305h87v87h-87zM1566 1305h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd8bb%22 d=%22M1653 1305h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22none%22 d=%22M1740 1305h87v87h-87zM1827 1305h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3Cpath fill=%22%2300bfd86f%22 d=%22M1914 1305h87v87h-87z%22 transform=%22skewX(-5)%22%2F%3E%3C%2Fg%3E%3Cdefs%3E%3CradialGradient id=%22a%22%3E%3Cstop offset=%220%22 stop-color=%22%23fff%22%2F%3E%3Cstop offset=%221%22 stop-color=%22%23fff%22 stop-opacity=%220%22%2F%3E%3C%2FradialGradient%3E%3C%2Fdefs%3E%3C%2Fsvg%3E");
 	}
 
 
@@ -2313,6 +2345,19 @@ a:hover.back-to-top {
 
 	/* end of request */
 
+
+/* Workflow */
+
+	.workflow {
+		width: 100%;
+		text-align: left;
+		display: flex;
+	}
+	.workflow p {
+		text-align: left;
+
+	}
+/* End of workflow */
 
 	/* Video */
 	.basic-3 .image-container {
@@ -2495,6 +2540,17 @@ a:hover.back-to-top {
 	}
 
 	/* end of request */
+
+	/* Workflow */
+	.workflow {
+		width: 100%;
+		text-align: left;
+		display: flex;
+	}
+	.workflow p {
+		text-align: left;
+
+	}
 
 
 	/* Video */
