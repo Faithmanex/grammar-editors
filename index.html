@@ -1089,34 +1089,18 @@
     <!-- End of Send form -->
 
     <!-- Chatbot -->
-    <div id="magicform-root" style="z-index: 9999; max-width:70%; position: relative;"></div>
-    <script>
+   
+      <div id="magicform-root" style="z-index: 9999;position: relative;"></div> 
+      <script>
         (function (w, d, s, o, f, js, fjs) {
-            w["Simple-Widget"] = o;
-            w[o] = w[o] || function () {
-                (w[o].q = w[o].q || []).push(arguments)
-            };
+            w["Simple-Widget"] = o; w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) };
             js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
-            js.id = o;
-            js.src = f;
-            js.async = 1;
-            fjs.parentNode.insertBefore(js, fjs);
+            js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);
         }(window, document, "script", "w1", 'https://magicform-widget-assets.s3.us-west-2.amazonaws.com/widget.js'));
-        w1("init", {
-            "popUpTimer": 6500,
-            "imageUrl": "https://magicform-customer-widget-icons.s3.us-west-2.amazonaws.com/kqwdeza1904t-palogo-black.png",
-            "widgetType": "bubble",
-            "chatHeight": 400,
-            "chatWidth": 250,
-            "placeholder": "What's on your mind?",
-            "stackId": "stack_4e446195-6f2d-4874-967a-4c6b003d8da5",
-            "userId": "44823eda-9211-4acc-9c59-5f1e2d9a2f81",
-            "colors": {
-                "main": "#00bfd8",
-                "userMessageBubble": "#00bfd8"
-            }
-        });
-    </script>
+        w1("init", 
+{"popUpTimer":8000,"imageUrl":"https://magicform-customer-widget-icons.s3.us-west-2.amazonaws.com/9b3d1we64jw7-palogo-blue (1).png","widgetType":"bubble","chatHeight":500,"chatWidth":370,"placeholder":"What's on your mind?","title":"WordMend Chatbot","subtitle":"Typically Responds in 5 Seconds","stackId":"stack_1a6938e3-94c2-4ba0-9c2d-084df1d31209","userId":"af240876-08e3-47d9-ae6c-01d8c8c88f1d","colors":{"main":"#00e6d6","userMessageBubble":"#00e6d6"}}
+);
+      </script>
 
     <!-- Footer -->
     <div class="footer">
