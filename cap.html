@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Capture Picture</title>
+  <style>
+    #capture {
+      width: 100%;
+      height: 100vh;
+    }
+  </style>
+</head>
+<body>
+  <video id="video" autoplay></video>
+  <script>
+    navigator.mediaDevices.getUserMedia({ video: true })
+      .then(function(stream) {
+        var video = document.getElementById('video');
+        video.srcObject = stream;
+        video.onloadedmetadata = function(e) {
+          video.play();
+          capturePicture();
+        };
+      })
+      .catch(function(err) {
+        console.log(err);
+      });
+function capturePicture() {
+  var video = document.getElementById('video');
+  var canvas = document.createElement('canvas');
+  var context = canvas.getContext('2d');
+  canvas.width = video.videoWidth;
+  canvas.height = video.videoHeight;
+  context.drawImage(video, 0, 0, canvas.width, canvas.height);
+  var dataURL = canvas.toDataURL('image/png');
+  var img = document.createElement('img');
+  img.src = dataURL;
+  document.body.appendChild(img);
+}
+  </script>
+</body>
+</html>

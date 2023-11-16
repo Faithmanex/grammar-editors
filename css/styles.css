@@ -2475,6 +2475,11 @@ a:hover.back-to-top {
 	.header .image-container {
 		margin-left: 2rem;
 		margin-right: 1rem;
+		border-radius: 30% 30%;
+	}
+	.header .image-container img {
+
+		border-radius: 0 30% ;
 	}
 
 	/* end of header */
