@@ -887,6 +887,7 @@ screen and (-ms-high-contrast: none) {
 /*     06. Services     */
 /************************/
 .cards-1 {
+	background-color: #eee;
 	padding-top: 4rem;
 	padding-bottom: 1.625rem;
 	text-align: center;
