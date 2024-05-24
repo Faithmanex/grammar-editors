@@ -940,8 +940,20 @@ screen and (-ms-high-contrast: none) {
 }
 
 .cards-1 .card-title {
-	margin-bottom: 0.875rem;
+	margin-bottom: 0.1rem;
 }
+
+.card-body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+  }
+  
+  .card-body button {
+	margin-top: 20px;
+  }
 
 .cards-1 .card-body {
 	padding: 0;
@@ -1113,6 +1125,70 @@ img .div-border-top {
 .lightbox-basic .btn-solid-reg {
 	margin-top: 0.75rem;
 }
+
+
+.get-started-button {
+	--primary-color: #00bfd8;
+	--secondary-color: #fff;
+	--hover-color: #111;
+	--arrow-width: 10px;
+	--arrow-stroke: 2px;
+	box-sizing: border-box;
+	border: 5 black;
+	border-radius: 30px;
+	color: var(--secondary-color);
+	padding: 0.9em 1.8em;
+	background: var(--primary-color);
+	display: flex;
+	transition: 0.2s background;
+	align-items: center;
+	gap: 0.6em;
+	font-weight: bold;
+  }
+  
+  .get-started-button .arrow-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .get-started-button .arrow {
+	margin-top: 1px;
+	width: var(--arrow-width);
+	background: var(--primary-color);
+	height: var(--arrow-stroke);
+	position: relative;
+	transition: 0.2s;
+  }
+  
+  .get-started-button .arrow::before {
+	content: "";
+	box-sizing: border-box;
+	position: absolute;
+	border: solid var(--secondary-color);
+	border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+	display: inline-block;
+	border: 50 #00bfd8;
+	top: -3px;
+	right: 3px;
+	transition: 0.2s;
+	padding: 3px;
+	transform: rotate(-45deg);
+  }
+  
+  .get-started-button:hover {
+	background-color: var(--hover-color);
+	box-sizing: border-box;
+
+  }
+  
+  .get-started-button:hover .arrow {
+	background: var(--secondary-color);
+  }
+  
+  .get-started-button:hover .arrow:before {
+	right: 0;
+  }
 
 /* Signup Button */
 .lightbox-basic .btn-solid-reg.mfp-close {
@@ -2239,7 +2315,7 @@ a:hover.back-to-top {
 		left: 0;
 		right: 0;
 		bottom: 0;
-		background-color: rgba(0, 0, 0, 0);
+		background-color: rgba(0, 0, 0, 0.452);
 		/* Black background with opacity */
 		background-size: cover;
 	}
