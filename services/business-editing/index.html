@@ -12,23 +12,23 @@
     <!-- Open Graph / Facebook Meta Tags -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="WordMend"> <!-- website name -->
-    <meta property="og:site" content="https://wordmend.netlify.app/"> <!-- website link -->
+    <meta property="og:site" content="https://wordmend.com/"> <!-- website link -->
     <meta property="og:title" content="WordMend - Professional Proofreading and Editing Services">
     <meta property="og:description" content="WordMend offers professional proofreading and editing services for academic papers, business documents, and more. Get expert help with grammar, punctuation, and style.">
-    <meta property="og:image" content="https://wordmend.netlify.app/images/palogo-blue.jpg">
-    <meta property="og:url" content="https://wordmend.netlify.app/">
+    <meta property="og:image" content="https://wordmend.com/images/palogo-blue.jpg">
+    <meta property="og:url" content="https://wordmend.com/">
     <meta property="og:type" content="website">
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="WordMend - Professional Proofreading and Editing Services">
     <meta name="twitter:description" content="WordMend offers professional proofreading and editing services for academic papers, business documents, and more. Get expert help with grammar, punctuation, and style.">
-    <meta name="twitter:image" content="https://wordmend.netlify.app/images/palogo-blue.jpg">
+    <meta name="twitter:image" content="https://wordmend.com/images/palogo-blue.jpg">
     <meta name="twitter:site" content="@thewordmend">
-    <meta name="twitter:url" content="https://wordmend.netlify.app/">
+    <meta name="twitter:url" content="https://wordmend.com/">
     <!-- Other Meta Tags -->
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
-    <link rel="canonical" href="https://wordmend.netlify.app/">
+    <link rel="canonical" href="https://wordmend.com/">
 
 
     <!-- Styles -->
@@ -309,164 +309,122 @@
 
 
 
-                    <!-- Request Form -->
-                    <div class="form-container">
+  <!-- Request Form -->
+<div class="form-container">
+    <form id="requestForm" data-toggle="validator" data-focus="false">
+        <div class="form-group">
+            <input type="text" class="form-control-input" id="rname" name="rname" required>
+            <label class="label-control" for="rname">Full name</label>
+            <div class="help-block with-errors"></div>
+        </div>
+        <div class="form-group">
+            <input type="email" class="form-control-input" id="remail" name="remail" required>
+            <label class="label-control" for="remail">Email</label>
+            <div class="help-block with-errors"></div>
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control-input" id="rphone" name="rphone" required>
+            <label class="label-control" for="rphone">Phone</label>
+            <div class="help-block with-errors"></div>
+        </div>
+        <div class="form-group">
+            <select class="form-control-select" id="rselect" name="rselect" required>
+                <option class="select-option" value="" disabled selected>Interested in...</option>
+                <optgroup label="Business">
+                    <option class="select-option" value="Business Editing">Editing</option>
+                    <option class="select-option" value="Business Formatting">Formatting</option>
+                    <option class="select-option" value="Business Writing">Writing</option>
+                </optgroup>
+            </select>
+            <div class="help-block with-errors"></div>
+        </div>
+        <div class="form-group">
+            <textarea class="form-control-textarea" id="rmessage" name="rmessage" required></textarea>
+            <label class="label-control" for="rmessage">Requirement(s)</label>
+            <div class="help-block with-errors"></div>
+        </div>
+        <div class="form-group">
+            <label for="rfile">Attach Your Document</label>
+            <input type="file" class="form-control-file" id="rfile" name="rfile">
+            <div class="help-block with-errors"></div>
+        </div>
+        <div class="form-group checkbox">
+            <input type="checkbox" id="rterms" value="Agreed to Terms & Conditions" name="rterms" required>
+            <label class="label-control" for="rterms">I agree with WordMend's stated <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms & Conditions</a></label>
+            <div class="help-block with-errors"></div>
+        </div>
+        <br>
+        <div class="form-group">
+            <button type="submit" onclick="sendFile()" class="form-control-submit-button">REQUEST</button>
+        </div>
+        <div class="form-message">
+            <div id="rmsgSubmit" class="h3 text-center hidden"></div>
+        </div>
+    </form>
+</div>
 
-                        <form id="requestForm" data-toggle="validator" data-focus="false">
-                            <div class="form-group"> <input type="text" class="form-control-input" id="rname"
-                                    name="rname" required> <label class="label-control" for="rname">Full name</label>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group"> <input type="email" class="form-control-input" id="remail"
-                                    name="remail" required> <label class="label-control" for="remail">Email</label>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group"> <input type="text" class="form-control-input" id="rphone"
-                                    name="rphone" required> <label class="label-control" for="rphone">Phone</label>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group"> <select class="form-control-select" id="rselect" required>
-                                    <option class="select-option" value="" disabled selected>Interested in...</option>
-                                    <option class="select-option" value="Starter">Academic Editing</option>
-                                    <option class="select-option" value="Medium">Business Editing</option>
-                                    <option class="select-option" value="Complete">Creative Editing</option>
-                                </select>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group"> <textarea class="form-control-textarea" id="rmessage"
-                                    name="rmessage" required></textarea> <label class="label-control"
-                                    for="rmessage">Requirement(s)</label>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group"> <label for="rfile">Attach a your Document</label><input type="file"
-                                    class="form-control-file" id="rfile" name="rfile">
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <div class="form-group checkbox"> <input type="checkbox" id="rterms"
-                                    value="Agreed to Terms & Conditions" name="rterms" required> <label
-                                    class="label-control" for="rterms">I agree with
-                                    WordMend's stated <a href="../../privacy-policy.html">Privacy Policy</a> and <a
-                                        href="../../terms-conditions.html">Terms & Conditions</a></label>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                            <br>
-                            <div class="form-group"> <button type="submit" onclick="sendFile()"
-                                    class="form-control-submit-button">REQUEST</button> </div>
-                            <div class="form-message">
-                                <div id="rmsgSubmit" class="h3 text-center hidden"></div>
-                            </div>
-                        </form>
-                    </div>
-                    <!-- Send Form -->
-                    <script>
-                        const form = document.getElementById('requestForm');
-const submitBtn = document.getElementById('rmsgSubmit');
+<!-- Send Form -->
+<script>
+    const form = document.getElementById('requestForm');
+    const submitBtn = document.getElementById('rmsgSubmit');
 
-form.addEventListener('submit', (event) => {
-    event.preventDefault();
-    if (!form.checkValidity()) {
-        alert('Please complete the required inputs');
-        return;
-    }
-    submitBtn.innerHTML = 'Submitting...';
-    submitBtn.disabled = true;
-
-    const formData = new FormData(form);
-    const xhr = new XMLHttpRequest();
-
-    xhr.open('POST',
-        'https://api.telegram.org/bot5313824526:AAEI3MgZNSxfGmExZCB8srsgh_4c_gC6sDc/sendMessage'
-        );
-    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            alert('Your order request has been sent successfully!\nYou will receive an email from us concerning your request');
-            form.reset();
-            submitBtn.innerHTML = 'Submit';
-            submitBtn.disabled = false;
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        if (!form.checkValidity()) {
+            alert('Please complete the required inputs');
+            return;
         }
-    };
-    xhr.send(
-        `chat_id=2040461515&text=𝐎𝐫𝐝𝐞𝐫 𝐑𝐞𝐪𝐮𝐞𝐬𝐭 - 𝐏𝐫𝐨𝐨𝐟𝐀𝐢𝐝\n\nName: ${formData.get('rname')}%0AEmail: ${formData.get('remail')}\n \nPhone: ${formData.get('rphone')}\n \nInterested In: ${formData.get('rselect')}\n \nMessage: ${formData.get('rmessage')}%0ATerms: ${formData.get('rterms')}`
+        submitBtn.innerHTML = 'Submitting...';
+        submitBtn.disabled = true;
+
+        const formData = new FormData(form);
+        const xhr = new XMLHttpRequest();
+
+        xhr.open('POST', 'https://api.telegram.org/bot5313824526:AAEI3MgZNSxfGmExZCB8srsgh_4c_gC6sDc/sendMessage');
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                alert('Your order request has been sent successfully!\nYou will receive an email from us concerning your request');
+                form.reset();
+                submitBtn.innerHTML = 'Submit';
+                submitBtn.disabled = false;
+            }
+        };
+        xhr.send(
+            `chat_id=2040461515&text=Order Request - ProofAid\n\nName: ${formData.get('rname')}%0AEmail: ${formData.get('remail')}\n \nPhone: ${formData.get('rphone')}\n \nInterested In: ${formData.get('rselect')}\n \nMessage: ${formData.get('rmessage')}%0ATerms: ${formData.get('rterms')}`
         );
-});
+    });
 
-                        // Send File
-                        function sendFile() {
-                            const input = document.getElementById('rfile');
-                            const file = input.files[0];
-                            if (!file) {
-                                console.error('No file selected');
-                                return;
-                            }
-                            const formData = new FormData();
-                            formData.append('document', file);
-                            const botToken = '5313824526:AAEI3MgZNSxfGmExZCB8srsgh_4c_gC6sDc';
-                            const chatId = '2040461515';
-                            const xhr = new XMLHttpRequest();
-                            xhr.open('POST', `https://api.telegram.org/bot${botToken}/sendDocument?chat_id=${chatId}`);
-                            xhr.onreadystatechange = function () {
-                                if (xhr.readyState === 4) {
-                                    if (xhr.status === 200) {
-                                        console.log('File sent successfully');
-                                    } else {
-                                        console.error(`Failed to send file: ${xhr.statusText}`);
-                                    }
-                                }
-                            };
-                            xhr.onerror = function () {
-                                console.error('Network error');
-                            };
-                            xhr.send(formData);
-                        }
-                    </script>
-                    <!-- submit form 2
-                    <script>
-                        const TelegramBot = require('node-telegram-bot-api');
-                        const token = 'bot5313824526:AAEI3MgZNSxfGmExZCB8srsgh_4c_gC6sDc';
-                        const chatId = '2040461515';
+    // Send File
+    function sendFile() {
+        const input = document.getElementById('rfile');
+        const file = input.files[0];
+        if (!file) {
+            console.error('No file selected');
+            return;
+        }
+        const formData = new FormData();
+        formData.append('document', file);
+        const botToken = '5313824526:AAEI3MgZNSxfGmExZCB8srsgh_4c_gC6sDc';
+        const chatId = '2040461515';
+        const xhr = new XMLHttpRequest();
+        xhr.open('POST', `https://api.telegram.org/bot${botToken}/sendDocument?chat_id=${chatId}`);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200) {
+                    console.log('File sent successfully');
+                } else {
+                    console.error(`Failed to send file: ${xhr.statusText}`);
+                }
+            }
+        };
+        xhr.onerror = function () {
+            console.error('Network error');
+        };
+        xhr.send(formData);
+    }
+</script>
 
-                        const bot = new TelegramBot(token, {
-                            polling: false
-                        });
-
-                        // Handle form submission
-                        const form = document.getElementById('requestForm');
-                        form.addEventListener('submit', (event) => {
-                            event.preventDefault();
-
-                            // Get form data
-                            const name = document.getElementById('rname').value;
-                            const email = document.getElementById('remail').value;
-                            const phone = document.getElementById('rphone').value;
-                            const select = document.getElementById('rselect').value;
-                            const message = document.getElementById('rmessage').value;
-                            const file = document.getElementById('rfile').files[0];
-
-                            // Send message to Telegram bot
-                            const caption =
-                                `New form submission:\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nInterested in: ${select}\nMessage: ${message}`;
-                            bot.sendDocument(chatId, file, {
-                                caption
-                            }).then(() => {
-                                // Show success message
-                                const messageContainer = document.getElementById('rmsgSubmit');
-                                messageContainer.classList.remove('hidden');
-                                messageContainer.classList.add('text-success');
-                                messageContainer.innerHTML = 'Form submitted successfully!';
-                            }).catch((error) => {
-                                // Show error message
-                                const messageContainer = document.getElementById('rmsgSubmit');
-                                messageContainer.classList.remove('hidden');
-                                messageContainer.classList.add('text-danger');
-                                messageContainer.innerHTML = `Error: ${error.message}`;
-                            });
-                        });
-                    </script> -->
-
-
-                </div> <!-- end of form-container -->
-                <!-- end of request form -->
 
             </div> <!-- end of col -->
         </div> <!-- end of row -->
@@ -477,47 +435,90 @@ form.addEventListener('submit', (event) => {
 
 	<!-- Workflow -->
 <div class="workflow-container cards-1">
-	<h3>Our Proofreading and Editing Workflow</h3>
-<div class="workflow">
-  <ul style="width: 50%; min-width:300px; margin-top: 25px">
-    <li>
-      <h5>Client Submission</h5>
-      <p>Submit your document through our request form or via email.</p>
-    </li>
+    <h3>Our Proofreading and Editing Workflow</h3>
+    <div class="workflow">
+        <ul class="workflow-list">
+            <li>
+                <h5>Client Submission</h5>
+                <p>Submit your document through our request form or via email.</p>
+            </li>
+            <li>
+                <h5>Document Assessment</h5>
+                <p>We assess your document to determine the scope of work required.</p>
+            </li>
+            <li>
+                <h5>Quotation and Agreement</h5>
+                <p>Receive a detailed quotation, agree to the terms and conditions, and make payment.</p>
+            </li>
+        </ul>
+        <ul class="workflow-list">
+            <li>
+                <h5>Confirmation & Editing Process</h5>
+                <p>We start thorough proofreading and editing of your document as soon as we get a payment confirmation.</p>
+            </li>
+            <li>
+                <h5>Delivery and Review</h5>
+                <p>Receive the edited document within the agreed timeframe for your review.</p>
+            </li>
+            <li>
+                <h5>Client Feedback and Follow-up</h5>
+                <p>Share your feedback to help us improve our services.</p>
+            </li>
+        </ul>
+    </div>
+    <style>
+        .workflow-container {
+            background-color: #f9f9f9;
+            padding: 40px 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-    <li>
-      <h5>Document Assessment</h>
-      <p>We assess your document to determine the scope of work required.</p>
-    </li>
+        .workflow-container h3 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 30px;
+        }
 
-    <li>
-      <h5>Quotation and Agreement</h5>
-      <p>Receive a detailed quotation, agree to the terms and conditions, and make payment.</p>
-    </li>
-  </ul>
-  <ul  style=" width: 50%; min-width:300px;  margin-top: 25px">
-	
-    <li>
-		<h5>Confirmation & Editing Process</h5>
-		<p>We start thorough proofreading and editingof your document as soon as we get a payment confirmation</p>
-	  </li>
-  
-	  <li>
-		<h5>Delivery and Review</h5>
-		<p>Receive the edited document within the agreed timeframe for your review.</p>
-	  </li>
-  
-	  <li>
-		<h5>Client Feedback and Follow-up</h>
-		<p>Share your feedback to help us improve our services.</p>
-	  </li>
-  </ul>
-</div>
-<style>
+        .workflow {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
 
-  </style>
+        .workflow-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            width: 45%;
+            min-width: 300px;
+            margin-top: 25px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .workflow-list li {
+            margin-bottom: 20px;
+        }
+
+        .workflow-list h5 {
+            font-size: 20px;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .workflow-list p {
+            font-size: 16px;
+            color: #555;
+        }
+    </style>
 </div>
 <!-- Workflow -->
+
 
 
     <!-- Customers -->
